@@ -297,6 +297,12 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'proximanovaregular';
+  src: local("Proxima-Nova-Regular"), url("../fonts/Proxima-Nova-Regular.woff2") format("woff2"), url("../fonts/Proxima-Nova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .container {
   margin-right: auto;
   margin-left: auto; }
@@ -318,9 +324,9 @@ template {
   .container {
     width: 1100px; } }
 
-@media (min-width: 1400px) {
+@media (min-width: 1800px) {
   .container {
-    width: 1260px; } }
+    width: 1600px; } }
 
 /*---------------------------------------------------
     SCSS Elements 0.1
@@ -351,17 +357,6 @@ template {
 
 */
 /*** reset ***********/
-html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-header, section, footer, aside, nav, article {
-  display: block; }
-
-ul {
-  list-style: none; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -377,7 +372,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: url(../images/bg.jpg) no-repeat center/cover;
+  background: #031821 url(../images/bg.jpg) no-repeat center/cover;
+  font-family: 'proximanovaregular';
+  color: #b0cad3;
   font-size: 14px;
   font-size: 1.4rem;
   flex-flow: column;
@@ -472,7 +469,7 @@ em strong {
   position: absolute; }
 
 .form-control {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #b0cad3;
   border-radius: 0;
   margin-top: 0.6rem;
   font-size: 16px; }
