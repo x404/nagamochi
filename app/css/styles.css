@@ -669,6 +669,34 @@ strong,
   display: flex;
   align-items: center; }
 
+.homepage .main-pic {
+  margin-left: -4rem; }
+  .homepage .main-pic img {
+    -webkit-animation: pulsing 10s infinite;
+    animation: pulsing 10s infinite; }
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9); }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9); } }
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9); }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  100% {
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9); } }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
