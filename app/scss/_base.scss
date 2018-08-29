@@ -28,7 +28,7 @@ html {
 
 body{
 	background: #031821 url(../images/bg.jpg) no-repeat center / cover;
-	font-family: 'proxima';
+	font-family: 'proxima', Georgia, sans-serif;
 	color: $color3;
 	@include font-size(1.4);
 	font-display: swap;
@@ -88,52 +88,22 @@ h3{font-size:1.6rem}
 	font-weight: normal;
 }
 /* font-family: "SegoeUIBold"; */
-@font-face {
-	font-family: "SegoeUIBold";
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "SegoeUIItalic";
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "SegoeUIBoldItalic";
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
 strong,
 .bold{
-	font-weight: normal;
-	font-family: "SegoeUIBold";
+	font-weight: 500;
 }
 em, i, 
 .italic{
-	font-style: normal;
-	font-family: "SegoeUIItalic";
+	// font-style: normal;
+	// font-family: "SegoeUIItalic";
 }
 
 strong em,
 em strong
 {
-	font-weight: normal;
-	font-family: "SegoeUIBoldItalic";
+	// font-weight: normal;
+	// font-family: "SegoeUIBoldItalic";
 }
 
 
@@ -181,6 +151,9 @@ em strong
 	font-size: 1.5rem;
 	font-weight: 500;
 	transition: .3s;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	&-blue{
 		color: $color2;
 		border-color: $color5;
@@ -193,6 +166,24 @@ em strong
 		border-radius: 4.5rem;
 		height: 4.5rem;
 		width: 13rem;
+	}
+
+	&-learn-more{
+		border-radius: 6rem;
+		height: 6rem;
+		font-size: 2rem;
+		width: 20rem;
+		text-decoration: none;
+		padding-left: 10px;
+		position: relative;
+		&:before{
+			@extend .before;
+			width: 18px;
+			height: 12px;
+			background: url(../images/arrow.png) no-repeat left center;
+			top: 40%;
+			left: 25px;
+		}
 	}
 }
 
@@ -311,7 +302,10 @@ em strong
 	}
 	a{
 		color: $color6;
-		text-decoration: none;	
+		text-decoration: none;
+		&:hover{
+			color: $color5;
+		}
 	}
 	a, span{
 		margin-left: 1rem;
