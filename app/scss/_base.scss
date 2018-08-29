@@ -180,9 +180,14 @@ em strong
 	font-family: 'proxima';
 	font-size: 1.5rem;
 	font-weight: 500;
+	transition: .3s;
 	&-blue{
 		color: $color2;
 		border-color: $color5;
+		&:hover{
+			color: $color2;
+			background-color: $color5;
+		}
 	}
 	&-callback{
 		border-radius: 4.5rem;
@@ -196,14 +201,11 @@ em strong
 	background: none;
 	border: none;
 	cursor: pointer;
-	width: 30px;
-	height: 40px;
 	display: block;
+	height: 34px;
 	padding: 0;
-	// margin-left: 1rem;
-	// margin-top: -.9rem;
 	position: relative;
-	// padding: 0 15px;
+	width: 30px;
 	.icon-bar{
 		background: #fff;
 		border-radius: 2px;
@@ -211,9 +213,15 @@ em strong
 		height: 3px;
 		margin: 7px 0;
 		position: relative;
-		z-index: 5;
 		transition: .15s margin ease-out;
 		width: 100%;
+		z-index: 5;
+		transition: .3s background;
+	}
+	&:hover{
+		.icon-bar{
+			background: $color7;
+		}
 	}
 }
 

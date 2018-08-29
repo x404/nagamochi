@@ -552,10 +552,14 @@ em strong {
   cursor: pointer;
   font-family: 'proxima';
   font-size: 1.5rem;
-  font-weight: 500; }
+  font-weight: 500;
+  transition: .3s; }
   .btn-blue {
     color: #fff;
     border-color: #00b4a9; }
+    .btn-blue:hover {
+      color: #fff;
+      background-color: #00b4a9; }
   .btn-callback {
     border-radius: 4.5rem;
     height: 4.5rem;
@@ -565,11 +569,11 @@ em strong {
   background: none;
   border: none;
   cursor: pointer;
-  width: 30px;
-  height: 40px;
   display: block;
+  height: 34px;
   padding: 0;
-  position: relative; }
+  position: relative;
+  width: 30px; }
   .extra-toggle .icon-bar {
     background: #fff;
     border-radius: 2px;
@@ -577,9 +581,12 @@ em strong {
     height: 3px;
     margin: 7px 0;
     position: relative;
-    z-index: 5;
     transition: .15s margin ease-out;
-    width: 100%; }
+    width: 100%;
+    z-index: 5;
+    transition: .3s background; }
+  .extra-toggle:hover .icon-bar {
+    background: #00ffef; }
 
 /* =header
 ---------------------------*/
