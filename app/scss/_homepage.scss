@@ -16,7 +16,8 @@
 	}
 	.intro{
 		margin-left: calc((100% - 1600px)/2);
-		padding-left: 10rem;
+		padding-left: 9.5rem;
+		margin-top: -9.5rem;
 		position: relative;
 		@extend .vline;
 		&:before{
@@ -42,11 +43,11 @@
 			@extend .before;
 			height: 63px;
 			border-left: 1px solid $color5;
-			left: 450px;
+			left: 443px;
 			bottom: -22px;
 		}
 		.btn{
-			margin-top: 3rem;
+			margin: 3.5rem 0 0 .7rem;
 		}
 	}
 
@@ -75,7 +76,7 @@
 	.right{
 		width: 480px;
 		position: relative;
-		top: -80px;
+		top: -87px;
 		@extend .vline;
 		&:before{
 			height: 140px;
@@ -84,7 +85,7 @@
 		}
 		.prevnext{
 			position: absolute;
-			left: -38px;
+			left: -40px;
 			bottom: 88px;
 		}
 		.new-title{
@@ -96,8 +97,8 @@
 
 	.counter{
 		position: absolute;
-		left: 0;
-		bottom: -180px;
+		left: -5px;
+		bottom: -162px;
 		font-size: 1.5rem;
 		&:before,
 		&:after{
@@ -150,7 +151,7 @@
 				padding: 3rem;
 				background: #13242b;
 				color: #fff;
-				height: 40rem;
+				height: 39.5rem;
 				display: block;
 				text-decoration: none;
 				&:hover{
@@ -165,7 +166,7 @@
 				font-weight: normal;
 				letter-spacing: 0.1em;
 				transition: .3s color;
-				margin: 2.2rem 0 1rem;
+				margin: 2.8rem 0 .5rem;
 				line-height: 1.7;
 			}
 			p{
@@ -191,7 +192,7 @@
 }
 
 
-@-webkit-keyframes pulsing {
+@-webkit-keyframes pulsing2 {
   0% {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9)
@@ -206,7 +207,7 @@
   }
 }
 
-@keyframes pulsing {
+@keyframes pulsing2 {
   0% {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9)

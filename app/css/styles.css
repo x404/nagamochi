@@ -629,8 +629,11 @@ strong,
 ---------------------------*/
 .header__inner {
   position: relative;
-  height: 13rem;
+  height: 14rem;
   z-index: 2; }
+
+.header .logo {
+  margin-right: 1rem; }
 
 .mainnav {
   font-weight: 900;
@@ -639,7 +642,7 @@ strong,
   padding-left: 3rem;
   font-size: 1.5rem; }
   .mainnav li {
-    margin-right: 4rem;
+    margin-right: 4.8rem;
     letter-spacing: 0.1em; }
     .mainnav li:last-child {
       margin-right: 0; }
@@ -844,7 +847,8 @@ form .form-control {
     z-index: 1; }
   .homepage .intro {
     margin-left: calc((100% - 1600px)/2);
-    padding-left: 10rem;
+    padding-left: 9.5rem;
+    margin-top: -9.5rem;
     position: relative; }
     .homepage .intro:before {
       left: 0;
@@ -864,10 +868,10 @@ form .form-control {
     .homepage .intro:after {
       height: 63px;
       border-left: 1px solid #00b4a9;
-      left: 450px;
+      left: 443px;
       bottom: -22px; }
     .homepage .intro .btn {
-      margin-top: 3rem; }
+      margin: 3.5rem 0 0 .7rem; }
   .homepage .main {
     display: flex;
     align-items: center;
@@ -884,14 +888,14 @@ form .form-control {
   .homepage .right {
     width: 480px;
     position: relative;
-    top: -80px; }
+    top: -87px; }
     .homepage .right:before {
       height: 140px;
       left: -110px;
       top: 20px; }
     .homepage .right .prevnext {
       position: absolute;
-      left: -38px;
+      left: -40px;
       bottom: 88px; }
     .homepage .right .new-title {
       position: absolute;
@@ -899,8 +903,8 @@ form .form-control {
       top: 20px; }
   .homepage .counter {
     position: absolute;
-    left: 0;
-    bottom: -180px;
+    left: -5px;
+    bottom: -162px;
     font-size: 1.5rem; }
     .homepage .counter:before {
       height: 80px;
@@ -934,7 +938,7 @@ form .form-control {
     padding: 3rem;
     background: #13242b;
     color: #fff;
-    height: 40rem;
+    height: 39.5rem;
     display: block;
     text-decoration: none; }
     #news-carousel .news-slide a:hover h3 {
@@ -945,7 +949,7 @@ form .form-control {
     font-weight: normal;
     letter-spacing: 0.1em;
     transition: .3s color;
-    margin: 2.2rem 0 1rem;
+    margin: 2.8rem 0 .5rem;
     line-height: 1.7; }
   #news-carousel .news-slide p {
     font-size: 1.3rem;
@@ -962,7 +966,7 @@ form .form-control {
 #news-carousel .slick-current:hover a {
   box-shadow: 0 0 20px rgba(0, 255, 239, 0.5); }
 
-@-webkit-keyframes pulsing {
+@-webkit-keyframes pulsing2 {
   0% {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9); }
@@ -973,7 +977,7 @@ form .form-control {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9); } }
 
-@keyframes pulsing {
+@keyframes pulsing2 {
   0% {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9); }
