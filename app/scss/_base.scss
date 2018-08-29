@@ -1,5 +1,5 @@
 /*** reset ***********/
-// html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
+html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
 // header, section, footer, aside, nav, article {display:block}
 // ul{list-style:none}
 
@@ -27,7 +27,7 @@ html {
 
 
 body{
-	background: #031821 url(../images/bg.jpg) no-repeat center / cover;
+	background: #000;
 	font-family: 'proxima', Georgia, sans-serif;
 	color: $color3;
 	@include font-size(1.4);
@@ -39,6 +39,31 @@ body{
 html, body{
 	height: 100%
 }
+
+
+.grid{
+	background: #031821 url(../images/bg.jpg) no-repeat center / cover;
+}
+
+
+@media (min-width: 1280px){
+	.body{
+		perspective: 1000px;
+	}	
+}
+
+
+.grid{
+	transition: .3s transform ease-out;
+	transform-origin: 0 50%;
+}
+
+
+.m-modal-open .grid, 
+.m-modal-open .outerwrapper {
+    transform: rotateY(5deg);
+}
+
 
 
 .grid{
@@ -137,8 +162,8 @@ em strong
 	font-size: 16px;
 	&:focus,
 	&:active{
-		border-color: $color5;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3)
+		border-color: $color10;
+		// filter: none;
 	}
 }
 
@@ -185,6 +210,16 @@ em strong
 			// background: url(../images/arrow.png) no-repeat left center;
 			top: 40%;
 			left: 25px;
+		}
+	}
+
+	&-black{
+		background: #000;
+		color: $color2;
+		border: none;
+		letter-spacing: 0.1em;
+		&:hover{
+			background-color: $color5;
 		}
 	}
 }
@@ -320,4 +355,189 @@ em strong
 	height: 1px;
 	overflow: hidden;
 	clip: rect(0 0 0 0);
+}
+
+
+
+form{
+	$pl: 27px;
+	.input-field{
+		position: relative;	
+		&:before{
+			bottom: 15px;
+		}	
+		label{
+			-moz-user-select: none;
+			color: $color2;
+			font-weight: 300;
+			cursor: text;
+			opacity: 1;
+			overflow: hidden;
+			position: absolute;
+			// padding-left: $pl;
+			text-overflow: ellipsis;
+			top: 7px;
+			transform-origin: left top 0;
+			transform: translate3d(0, 9px, 0px);
+			transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+			white-space: nowrap;
+			width: calc(96% - 10px);	
+		}	
+		.name-field{
+			opacity: 0;
+			color: #8bab9d;
+		}
+
+		.helper-field{
+		}
+	}
+
+	.is-focused{
+		label{
+			@include transform(translate3d(0,-7px,0) scale(.8));
+		}
+		.name-field{
+			opacity: 1;
+		}
+		.helper-field{
+			opacity: 0;
+		}
+	}
+
+	.input-field.is-charged:not(.is-focused) > label.name-field{
+		@include transform(translate3d(0px, -7px, 0px) scale(0.8));
+	}
+
+	.is-charged{
+		label{
+			opacity: 0;
+		}
+		.helper-field{
+			opacity: 0
+		}
+	}
+
+	.form-control{
+		background: none;
+		height: 40px;
+		border: none;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		letter-spacing: .1em
+	}
+}
+
+
+
+
+.sidemodal{
+	// background: rgba(0,121,72,.97);
+	background: $color9;
+	color: $color2;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 48rem;
+	z-index: 505;
+	transform: translateX(100%);
+	 // transform: translateX(0);		
+	transition: .3s transform ease-out;
+
+	&.open{
+		transform: translateX(0);		
+	}
+
+	.callback__form{
+		margin-top: 1.2rem;
+	}
+
+	.inner{
+		padding: 5rem 0 0 0;
+		margin-left: 8rem;
+		position: absolute;
+		width: 32rem;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		overflow-y: auto;
+	}
+	.title{
+		font-family: 'proxima_novaextrabold_italic';
+		// font-weight: 700;
+		letter-spacing: .1em;
+		font-size: 3.4rem;
+		text-transform: uppercase;
+	}
+	.text{
+		font-size: 1.6rem;
+		line-height: 1.6;
+		padding-top: 2.2rem;
+		padding-right: 2rem;
+	}
+
+	.input-field{
+		margin-top: 1.3rem;
+		label{
+			font-size: 1.7rem;
+		}
+	}
+
+	.submit{
+		border-radius: 5rem;
+		font-size: 1.7rem;
+		height: 5rem;
+		margin-top: 2.5rem;
+		width: 16rem;
+	}
+
+	.form-control{
+		width: 100%;
+	}
+
+	.textarea{
+		background:url('data:image/gif;base64,R0lGODlhAQAoAJECAAD+7gH+7gAAAAAAACH5BAEAAAIALAAAAAABACgAAAIHlI+pyxZQAAA7');
+		// background: url(../images/v.gif) ;
+		border: none;
+		line-height: 41px;
+		height: 120px;
+		overflow: hidden;
+		resize: none;
+		filter: grayscale(1) brightness(2);
+		// width: 100%;
+		&:active,
+		&:focus{
+			filter: none
+		}
+	}
+
+	.captcha{
+		margin-top: 3.2rem;
+	}
+}
+
+
+
+
+.close-modal{
+	cursor: pointer;
+	background: none;
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 35px;
+	z-index: 99;
+	svg{
+		@include transition-param(transform)
+	}
+	line{
+		stroke:white;
+		stroke-width:3
+	}
+	&:hover{
+		svg{
+			@include rotation(90deg)
+		}
+	}
 }

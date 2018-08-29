@@ -330,6 +330,12 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'proxima_novaextrabold_italic';
+  src: url("../fonts/ProximaNova-ExtraboldIt/proxima_nova_extrabold_italic.woff2") format("woff2"), url("../fonts/ProximaNova-ExtraboldIt/proxima_nova_extrabold_italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 .container {
   margin-right: auto;
   margin-left: auto; }
@@ -426,6 +432,11 @@ template {
 
 */
 /*** reset ***********/
+html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -441,7 +452,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: #031821 url(../images/bg.jpg) no-repeat center/cover;
+  background: #000;
   font-family: 'proxima', Georgia, sans-serif;
   color: #b0cad3;
   font-size: 14px;
@@ -452,6 +463,21 @@ body {
 
 html, body {
   height: 100%; }
+
+.grid {
+  background: #031821 url(../images/bg.jpg) no-repeat center/cover; }
+
+@media (min-width: 1280px) {
+  .body {
+    perspective: 1000px; } }
+
+.grid {
+  transition: .3s transform ease-out;
+  transform-origin: 0 50%; }
+
+.m-modal-open .grid,
+.m-modal-open .outerwrapper {
+  transform: rotateY(5deg); }
 
 .grid {
   display: grid;
@@ -517,8 +543,7 @@ strong,
   margin-top: 0.6rem;
   font-size: 16px; }
   .form-control:focus, .form-control:active {
-    border-color: #00b4a9;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
+    border-color: #46fff3; }
 
 .btn {
   background: none;
@@ -558,6 +583,13 @@ strong,
       height: 12px;
       top: 40%;
       left: 25px; }
+  .btn-black {
+    background: #000;
+    color: #fff;
+    border: none;
+    letter-spacing: 0.1em; }
+    .btn-black:hover {
+      background-color: #00b4a9; }
 
 .extra-toggle {
   background: none;
@@ -652,6 +684,138 @@ strong,
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0); }
+
+form .input-field {
+  position: relative; }
+  form .input-field:before {
+    bottom: 15px; }
+  form .input-field label {
+    -moz-user-select: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: text;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 7px;
+    transform-origin: left top 0;
+    transform: translate3d(0, 9px, 0px);
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    white-space: nowrap;
+    width: calc(96% - 10px); }
+  form .input-field .name-field {
+    opacity: 0;
+    color: #8bab9d; }
+
+form .is-focused label {
+  -webkit-transform: translate3d(0, -7px, 0) scale(0.8);
+  -ms-transform: translate3d(0, -7px, 0) scale(0.8);
+  transform: translate3d(0, -7px, 0) scale(0.8); }
+
+form .is-focused .name-field {
+  opacity: 1; }
+
+form .is-focused .helper-field {
+  opacity: 0; }
+
+form .input-field.is-charged:not(.is-focused) > label.name-field {
+  -webkit-transform: translate3d(0px, -7px, 0px) scale(0.8);
+  -ms-transform: translate3d(0px, -7px, 0px) scale(0.8);
+  transform: translate3d(0px, -7px, 0px) scale(0.8); }
+
+form .is-charged label {
+  opacity: 0; }
+
+form .is-charged .helper-field {
+  opacity: 0; }
+
+form .form-control {
+  background: none;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  letter-spacing: .1em; }
+
+.sidemodal {
+  background: #13242b;
+  color: #fff;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 48rem;
+  z-index: 505;
+  transform: translateX(100%);
+  transition: .3s transform ease-out; }
+  .sidemodal.open {
+    transform: translateX(0); }
+  .sidemodal .callback__form {
+    margin-top: 1.2rem; }
+  .sidemodal .inner {
+    padding: 5rem 0 0 0;
+    margin-left: 8rem;
+    position: absolute;
+    width: 32rem;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto; }
+  .sidemodal .title {
+    font-family: 'proxima_novaextrabold_italic';
+    letter-spacing: .1em;
+    font-size: 3.4rem;
+    text-transform: uppercase; }
+  .sidemodal .text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding-top: 2.2rem;
+    padding-right: 2rem; }
+  .sidemodal .input-field {
+    margin-top: 1.3rem; }
+    .sidemodal .input-field label {
+      font-size: 1.7rem; }
+  .sidemodal .submit {
+    border-radius: 5rem;
+    font-size: 1.7rem;
+    height: 5rem;
+    margin-top: 2.5rem;
+    width: 16rem; }
+  .sidemodal .form-control {
+    width: 100%; }
+  .sidemodal .textarea {
+    background: url("data:image/gif;base64,R0lGODlhAQAoAJECAAD+7gH+7gAAAAAAACH5BAEAAAIALAAAAAABACgAAAIHlI+pyxZQAAA7");
+    border: none;
+    line-height: 41px;
+    height: 120px;
+    overflow: hidden;
+    resize: none;
+    filter: grayscale(1) brightness(2); }
+    .sidemodal .textarea:active, .sidemodal .textarea:focus {
+      filter: none; }
+  .sidemodal .captcha {
+    margin-top: 3.2rem; }
+
+.close-modal {
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0px;
+  top: 35px;
+  z-index: 99; }
+  .close-modal svg {
+    -webkit-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+  .close-modal line {
+    stroke: white;
+    stroke-width: 3; }
+  .close-modal:hover svg {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 .homepage .intro {
   margin-left: calc((100% - 1600px)/2);
