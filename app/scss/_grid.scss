@@ -3,6 +3,25 @@
 	margin-left: auto;
 }
 
+@for $i from 10  through 1 {
+	$step : 10;
+	.col-#{$i}{width: $step*$i + %;}
+}
+
+.d-flex{
+	display: flex;
+}
+
+.flex-grow-1{
+	flex-grow: 1;
+}
+
+
+.align-items-center{
+	align-items: center
+}
+
+
 @media (max-width: 767px) {
 	.container{
 		padding-left: 15px;

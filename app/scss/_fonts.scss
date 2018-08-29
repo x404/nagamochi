@@ -1,8 +1,17 @@
 @font-face {
-	font-family: 'proximanovaregular';
+	font-family: 'proximanova';
 	src: local('Proxima-Nova-Regular'),
 	     url('../fonts/Proxima-Nova-Regular.woff2') format('woff2'),
 	     url('../fonts/Proxima-Nova-Regular.woff') format('woff');
 	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proximanova';
+	src: local('Proxima-Nova-Semibold'),
+	     url('../fonts/Proxima-Nova-Semibold.woff2') format('woff2'),
+	     url('../fonts/Proxima-Nova-Semibold.woff') format('woff');
+	font-weight: 900;
 	font-style: normal;
 }

@@ -28,11 +28,9 @@ html {
 
 body{
 	background: #031821 url(../images/bg.jpg) no-repeat center / cover;
-	// @include flexbox;
-	font-family: 'proximanovaregular';
+	font-family: 'proximanova';
 	color: $color3;
 	@include font-size(1.4);
-	flex-flow: column;
 	font-display: swap;
 	height: 100vh;
 }
@@ -41,6 +39,15 @@ html, body{
 	height: 100%
 }
 
+
+.grid{
+	display: grid;
+	grid-template-areas: "header"
+						 "main"
+						 "footer";
+	grid-template-rows: auto 1fr auto;	
+	min-height: 100vh;
+}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	//ie11
@@ -166,9 +173,56 @@ em strong
 
 
 
+.btn{
+	border-radius: 50%;
+	border: 2px solid;
+	&-blue{
+		border-color: $color5;
+	}
+}
+
 /* =header
 ---------------------------*/
-header{
+.header{
+	&__inner{
+		height: 13rem;		
+	}
+}
+
+.mainnav{
+	font-weight: 900;
+	text-transform: uppercase;
+	list-style: none;
+	padding-left: 3rem;
+	font-size: 1.5rem;
+	li{
+		margin-right: 4rem;
+		letter-spacing: 0.1em;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	a{
+		color: $color2;
+		text-decoration: none;
+		position: relative;
+		transition: .3s color;
+		&:after{
+			transition: .3s;
+			@extend .before;
+			background: $color7;
+			height: 2px;
+			width: 0;
+			right: 0;
+		}
+		&:hover{
+			color: $color7;
+			&:after{
+				width: 100%;
+				left: 0;		
+			}
+		}
+	}
 }
 
 /* =/header
@@ -190,6 +244,35 @@ header{
 }
 
 
+.footer{
+	&__inner{
+		height: 10rem;		
+	}
+}
+
+.copyright{
+	color: $color4;
+	img{
+		margin-right: 2.5rem;
+	}
+}
+
+.lang{
+	font-size: 1.5rem;
+	letter-spacing: 0.1em;
+	.current{
+		color: $color2;
+		text-decoration: none;
+		border-bottom: 2px solid $color5
+	}
+	a{
+		color: $color6;
+		text-decoration: none;	
+	}
+	a, span{
+		margin-left: 1rem;
+	}
+}
 
 .visually-hidden{
 	position: absolute;
