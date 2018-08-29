@@ -770,7 +770,7 @@ form .form-control {
   .sidemodal .callback__form {
     margin-top: 1.2rem; }
   .sidemodal .inner {
-    padding: 5rem 0 0 0;
+    padding: 5.5rem 0 0 0;
     margin-left: 8rem;
     position: absolute;
     width: 32rem;
@@ -783,6 +783,7 @@ form .form-control {
     font-family: 'proxima_novaextrabold_italic';
     letter-spacing: .1em;
     font-size: 3.4rem;
+    margin-bottom: 3rem;
     text-transform: uppercase; }
   .sidemodal .text {
     font-size: 1.6rem;
@@ -790,7 +791,7 @@ form .form-control {
     padding-top: 2.2rem;
     padding-right: 2rem; }
   .sidemodal .input-field {
-    margin-top: 1.3rem; }
+    margin-top: 3.2rem; }
     .sidemodal .input-field label {
       font-size: 1.7rem; }
   .sidemodal .submit {
@@ -819,8 +820,8 @@ form .form-control {
   background: none;
   border: none;
   position: absolute;
-  right: 0px;
-  top: 35px;
+  right: -7px;
+  top: 60px;
   z-index: 99; }
   .close-modal svg {
     -webkit-transition: transform 0.2s ease-out;
@@ -966,7 +967,7 @@ form .form-control {
 #news-carousel .slick-current:hover a {
   box-shadow: 0 0 20px rgba(0, 255, 239, 0.5); }
 
-@-webkit-keyframes pulsing2 {
+@-webkit-keyframes pulsing {
   0% {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9); }
@@ -977,7 +978,7 @@ form .form-control {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9); } }
 
-@keyframes pulsing2 {
+@keyframes pulsing {
   0% {
     -webkit-transform: scale(0.9, 0.9);
     transform: scale(0.9, 0.9); }
