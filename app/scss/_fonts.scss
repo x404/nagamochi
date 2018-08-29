@@ -1,17 +1,55 @@
 @font-face {
-	font-family: 'proximanova';
-	src: local('Proxima-Nova-Regular'),
-	     url('../fonts/Proxima-Nova-Regular.woff2') format('woff2'),
-	     url('../fonts/Proxima-Nova-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'proxima';
+    src: url('../fonts/proxima_nova_semibold.woff2') format('woff2'),
+         url('../fonts/proxima_nova_semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 900;
+
 }
 
+
 @font-face {
-	font-family: 'proximanova';
-	src: local('Proxima-Nova-Semibold'),
-	     url('../fonts/Proxima-Nova-Semibold.woff2') format('woff2'),
-	     url('../fonts/Proxima-Nova-Semibold.woff') format('woff');
-	font-weight: 900;
-	font-style: normal;
+    font-family: 'proxima';
+    src: url('../fonts/proxima_nova_black.woff2') format('woff2'),
+         url('../fonts/proxima_nova_black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-weight: 700;
 }
+
+
+
+
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/proxima_nova_bold.woff2') format('woff2'),
+         url('../fonts/proxima_nova_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+
+@font-face {
+    font-family: 'proxima';
+    src: url('../fonts/proxima_nova_regular.woff2') format('woff2'),
+         url('../fonts/proxima_nova_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+
+// @font-face {
+//     font-family: 'proxima';
+//     src: url('../fonts/proxima_nova_light.woff2') format('woff2'),
+//          url('../fonts/proxima_nova_light.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-weight: 100;
+
+// }

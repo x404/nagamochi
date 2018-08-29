@@ -298,16 +298,32 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'proximanova';
-  src: local("Proxima-Nova-Regular"), url("../fonts/Proxima-Nova-Regular.woff2") format("woff2"), url("../fonts/Proxima-Nova-Regular.woff") format("woff");
+  font-family: 'proxima';
+  src: url("../fonts/proxima_nova_semibold.woff2") format("woff2"), url("../fonts/proxima_nova_semibold.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: 900; }
 
 @font-face {
-  font-family: 'proximanova';
-  src: local("Proxima-Nova-Semibold"), url("../fonts/Proxima-Nova-Semibold.woff2") format("woff2"), url("../fonts/Proxima-Nova-Semibold.woff") format("woff");
-  font-weight: 900;
-  font-style: normal; }
+  font-family: 'proxima';
+  src: url("../fonts/proxima_nova_black.woff2") format("woff2"), url("../fonts/proxima_nova_black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'proxima';
+  src: url("../fonts/proxima_nova_bold.woff2") format("woff2"), url("../fonts/proxima_nova_bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'proxima';
+  src: url("../fonts/proxima_nova_regular.woff2") format("woff2"), url("../fonts/proxima_nova_regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 400; }
 
 .container {
   margin-right: auto;
@@ -351,6 +367,9 @@ template {
 
 .align-items-center {
   align-items: center; }
+
+.justify-content-end {
+  justify-content: flex-end; }
 
 @media (max-width: 767px) {
   .container {
@@ -418,7 +437,7 @@ html {
 
 body {
   background: #031821 url(../images/bg.jpg) no-repeat center/cover;
-  font-family: 'proximanova';
+  font-family: 'proxima';
   color: #b0cad3;
   font-size: 14px;
   font-size: 1.4rem;
@@ -528,10 +547,39 @@ em strong {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
 
 .btn {
-  border-radius: 50%;
-  border: 2px solid; }
+  background: none;
+  border: 2px solid;
+  cursor: pointer;
+  font-family: 'proxima';
+  font-size: 1.5rem;
+  font-weight: 500; }
   .btn-blue {
+    color: #fff;
     border-color: #00b4a9; }
+  .btn-callback {
+    border-radius: 4.5rem;
+    height: 4.5rem;
+    width: 13rem; }
+
+.extra-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  display: block;
+  padding: 0;
+  position: relative; }
+  .extra-toggle .icon-bar {
+    background: #fff;
+    border-radius: 2px;
+    display: block;
+    height: 3px;
+    margin: 7px 0;
+    position: relative;
+    z-index: 5;
+    transition: .15s margin ease-out;
+    width: 100%; }
 
 /* =header
 ---------------------------*/

@@ -28,7 +28,7 @@ html {
 
 body{
 	background: #031821 url(../images/bg.jpg) no-repeat center / cover;
-	font-family: 'proximanova';
+	font-family: 'proxima';
 	color: $color3;
 	@include font-size(1.4);
 	font-display: swap;
@@ -174,10 +174,46 @@ em strong
 
 
 .btn{
-	border-radius: 50%;
+	background: none;
 	border: 2px solid;
+	cursor: pointer;
+	font-family: 'proxima';
+	font-size: 1.5rem;
+	font-weight: 500;
 	&-blue{
+		color: $color2;
 		border-color: $color5;
+	}
+	&-callback{
+		border-radius: 4.5rem;
+		height: 4.5rem;
+		width: 13rem;
+	}
+}
+
+
+.extra-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	width: 30px;
+	height: 40px;
+	display: block;
+	padding: 0;
+	// margin-left: 1rem;
+	// margin-top: -.9rem;
+	position: relative;
+	// padding: 0 15px;
+	.icon-bar{
+		background: #fff;
+		border-radius: 2px;
+		display: block;
+		height: 3px;
+		margin: 7px 0;
+		position: relative;
+		z-index: 5;
+		transition: .15s margin ease-out;
+		width: 100%;
 	}
 }
 
