@@ -265,7 +265,9 @@ em strong
 ---------------------------*/
 .header{
 	&__inner{
+		position: relative;
 		height: 13rem;		
+		z-index: 2;
 	}
 }
 

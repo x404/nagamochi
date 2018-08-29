@@ -1,12 +1,16 @@
 .homepage{
 	position: relative;
-	&:after{
+	height: 100vh;
+	overflow: hidden;
+	.grid{
+	}
+	.grid:after{
 		@extend .before;
 		height: 0;
 		width: 0;
 		right: 0;
 		top: 0;
-		border-top: 110vh solid #0a0b0b; 
+		border-top: 105vh solid #0a0b0b; 
 		border-left: 600px solid transparent;
 		z-index: 1;
 	}
@@ -66,9 +70,12 @@
 		width: 100%;
 	}
 
+
+	// right
 	.right{
 		width: 480px;
 		position: relative;
+		top: -80px;
 		@extend .vline;
 		&:before{
 			height: 140px;
@@ -85,6 +92,50 @@
 			left: -56px;
 			top: 20px;
 		}
+	}
+
+	.counter{
+		position: absolute;
+		left: 0;
+		bottom: -180px;
+		font-size: 1.5rem;
+		&:before,
+		&:after{
+		}
+		@extend .vline;
+		&:before{
+			height: 80px;
+			right: -45px;
+			top: 15px;
+		}
+		&:after{
+			background: url(../images/dots.png);
+			@extend .before;
+			width: 95px;
+			height: 35px;
+			top: 0;
+			left: -18px;
+		}
+		.cifr{
+			 font-family: 'proxima_novablack_italic';;
+			font-size: 7rem;
+			letter-spacing: .1em;
+			color: $color5;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	// =/right
+
+
+	.footer{
+		position: relative;
+		top: -10px;
+	}
+	.footer__inner{
+		position: relative;
+		z-index: 2;
+		height: 6rem;
 	}
 }
 
