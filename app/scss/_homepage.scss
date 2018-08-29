@@ -1,5 +1,6 @@
 .homepage{
 	.intro{
+		margin-left: calc((100% - 1600px)/2);
 		padding-left: 10rem;
 		position: relative;
 		img{
@@ -34,10 +35,78 @@
 	}
 
 	.main-pic{
+		flex-grow: 1;
 		margin-left: -4rem;
 		img{
 			-webkit-animation: pulsing 10s infinite;
 			animation: pulsing 10s infinite;
+		}
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.right{
+		width: 530px;
+		position: relative;
+		.prevnext{
+			position: absolute;
+			left: -38px;
+			bottom: 88px;
+		}
+		.new-title{
+			position: absolute;
+			left: -56px;
+			top: 20px;
+		}
+	}
+}
+
+
+
+#news-carousel{
+	.news{
+		&-slide{
+			padding: 2rem 0;
+			width: 290px;
+			a{
+				padding: 3rem;
+				background: #13242b;
+				color: #fff;
+				height: 40rem;
+				display: block;
+				text-decoration: none;
+				&:hover{
+					h3{
+						color: $color7;
+					}
+				}
+			}
+			h3{
+				transition: .3s color;
+				font-weight: normal;
+				font-size: 1.4rem;
+				letter-spacing: 0.1em;
+				font-family: 'proxima_novabold_italic';
+			}
+			p{
+				font-size: 1.3rem;
+				line-height: 2;
+			}
+		}
+	}
+	.slick-slide:not(.slick-current){
+		opacity: .2;
+	}
+
+	.slick-current{
+		a{
+			transition: .3s box-shadow;
+			box-shadow: 0 0 20px rgba(0,0,0,.5);			
+		}
+		&:hover a{
+			box-shadow: 0 0 20px rgba(0,255,239,.5);			
 		}
 	}
 }

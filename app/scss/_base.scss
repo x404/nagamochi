@@ -33,6 +33,7 @@ body{
 	@include font-size(1.4);
 	font-display: swap;
 	height: 100vh;
+	font-weight: 400;
 }
 
 html, body{
@@ -180,7 +181,8 @@ em strong
 			@extend .before;
 			width: 18px;
 			height: 12px;
-			background: url(../images/arrow.png) no-repeat left center;
+			@include sprite($icon-arrow-type-1);
+			// background: url(../images/arrow.png) no-repeat left center;
 			top: 40%;
 			left: 25px;
 		}
