@@ -1,8 +1,25 @@
 .homepage{
+	position: relative;
+	&:after{
+		@extend .before;
+		height: 0;
+		width: 0;
+		right: 0;
+		top: 0;
+		border-top: 110vh solid #0a0b0b; 
+		border-left: 600px solid transparent;
+		z-index: 1;
+	}
 	.intro{
 		margin-left: calc((100% - 1600px)/2);
 		padding-left: 10rem;
 		position: relative;
+		@extend .vline;
+		&:before{
+			left: 0;
+			top: 46px;
+			height: 85px;
+		}
 		img{
 			margin-left: -8rem;
 		}
@@ -32,6 +49,8 @@
 	.main{
 		display: flex;
 		align-items: center;
+		position: relative;
+		z-index: 99;
 	}
 
 	.main-pic{
@@ -48,8 +67,14 @@
 	}
 
 	.right{
-		width: 530px;
+		width: 480px;
 		position: relative;
+		@extend .vline;
+		&:before{
+			height: 140px;
+			left: -110px;
+			top: 20px;
+		}
 		.prevnext{
 			position: absolute;
 			left: -38px;
@@ -84,15 +109,18 @@
 				}
 			}
 			h3{
-				transition: .3s color;
-				font-weight: normal;
-				font-size: 1.4rem;
-				letter-spacing: 0.1em;
 				font-family: 'proxima_novabold_italic';
+				font-size: 1.3rem;
+				font-weight: normal;
+				letter-spacing: 0.1em;
+				transition: .3s color;
+				margin: 2.2rem 0 1rem;
+				line-height: 1.7;
 			}
 			p{
 				font-size: 1.3rem;
 				line-height: 2;
+				letter-spacing: .05em;
 			}
 		}
 	}

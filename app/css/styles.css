@@ -479,6 +479,11 @@ html, body {
 .m-modal-open .outerwrapper {
   transform: rotateY(5deg); }
 
+.vline, .homepage .intro, .homepage .right {
+  position: relative; }
+  .vline:before, .homepage .intro:before, .homepage .right:before {
+    border-left: 1px solid #00b3a8; }
+
 .grid {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -532,7 +537,7 @@ strong,
   .tdu:hover {
     text-decoration: none; }
 
-.before, .btn-learn-more:before, .mainnav a:after, .homepage .intro:after, .slick-arrow:before {
+.before, .vline:before, .homepage .intro:before, .homepage .right:before, .btn-learn-more:before, .mainnav a:after, .homepage:after, .homepage .intro:after, .slick-arrow:before {
   content: "";
   display: block;
   position: absolute; }
@@ -817,54 +822,70 @@ form .form-control {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
 
-.homepage .intro {
-  margin-left: calc((100% - 1600px)/2);
-  padding-left: 10rem;
+.homepage {
   position: relative; }
-  .homepage .intro img {
-    margin-left: -8rem; }
-  .homepage .intro p {
-    color: #c0c0c0;
-    font-family: 'proxima_novaregular_italic';
-    font-size: 2.6rem;
-    margin-top: 0;
-    letter-spacing: .1em; }
-  .homepage .intro strong {
-    font-family: 'proxima';
-    font-weight: 500; }
-  .homepage .intro:after {
-    height: 63px;
-    border-left: 1px solid #00b4a9;
-    left: 450px;
-    bottom: -22px; }
-  .homepage .intro .btn {
-    margin-top: 3rem; }
-
-.homepage .main {
-  display: flex;
-  align-items: center; }
-
-.homepage .main-pic {
-  flex-grow: 1;
-  margin-left: -4rem; }
-  .homepage .main-pic img {
-    -webkit-animation: pulsing 10s infinite;
-    animation: pulsing 10s infinite; }
-
-.homepage .content {
-  width: 100%; }
-
-.homepage .right {
-  width: 530px;
-  position: relative; }
-  .homepage .right .prevnext {
-    position: absolute;
-    left: -38px;
-    bottom: 88px; }
-  .homepage .right .new-title {
-    position: absolute;
-    left: -56px;
-    top: 20px; }
+  .homepage:after {
+    height: 0;
+    width: 0;
+    right: 0;
+    top: 0;
+    border-top: 110vh solid #0a0b0b;
+    border-left: 600px solid transparent;
+    z-index: 1; }
+  .homepage .intro {
+    margin-left: calc((100% - 1600px)/2);
+    padding-left: 10rem;
+    position: relative; }
+    .homepage .intro:before {
+      left: 0;
+      top: 46px;
+      height: 85px; }
+    .homepage .intro img {
+      margin-left: -8rem; }
+    .homepage .intro p {
+      color: #c0c0c0;
+      font-family: 'proxima_novaregular_italic';
+      font-size: 2.6rem;
+      margin-top: 0;
+      letter-spacing: .1em; }
+    .homepage .intro strong {
+      font-family: 'proxima';
+      font-weight: 500; }
+    .homepage .intro:after {
+      height: 63px;
+      border-left: 1px solid #00b4a9;
+      left: 450px;
+      bottom: -22px; }
+    .homepage .intro .btn {
+      margin-top: 3rem; }
+  .homepage .main {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99; }
+  .homepage .main-pic {
+    flex-grow: 1;
+    margin-left: -4rem; }
+    .homepage .main-pic img {
+      -webkit-animation: pulsing 10s infinite;
+      animation: pulsing 10s infinite; }
+  .homepage .content {
+    width: 100%; }
+  .homepage .right {
+    width: 480px;
+    position: relative; }
+    .homepage .right:before {
+      height: 140px;
+      left: -110px;
+      top: 20px; }
+    .homepage .right .prevnext {
+      position: absolute;
+      left: -38px;
+      bottom: 88px; }
+    .homepage .right .new-title {
+      position: absolute;
+      left: -56px;
+      top: 20px; }
 
 #news-carousel .news-slide {
   padding: 2rem 0;
@@ -879,14 +900,17 @@ form .form-control {
     #news-carousel .news-slide a:hover h3 {
       color: #00ffef; }
   #news-carousel .news-slide h3 {
-    transition: .3s color;
+    font-family: 'proxima_novabold_italic';
+    font-size: 1.3rem;
     font-weight: normal;
-    font-size: 1.4rem;
     letter-spacing: 0.1em;
-    font-family: 'proxima_novabold_italic'; }
+    transition: .3s color;
+    margin: 2.2rem 0 1rem;
+    line-height: 1.7; }
   #news-carousel .news-slide p {
     font-size: 1.3rem;
-    line-height: 2; }
+    line-height: 2;
+    letter-spacing: .05em; }
 
 #news-carousel .slick-slide:not(.slick-current) {
   opacity: .2; }

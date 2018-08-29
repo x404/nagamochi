@@ -11,7 +11,7 @@ $(document).ready(function(){
 		arrows : true,
 		appendArrows : $('.prevnext'),
         centerMode: true,
-        centerPadding: '105px',
+        centerPadding: '80px',
         infinite : true
 	});
 

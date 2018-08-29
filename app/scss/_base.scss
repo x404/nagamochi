@@ -64,6 +64,14 @@ html, body{
     transform: rotateY(5deg);
 }
 
+.vline{
+	position: relative;
+	&:before{
+		@extend .before;
+		border-left: 1px solid $color11;
+	}
+}
+
 
 
 .grid{
