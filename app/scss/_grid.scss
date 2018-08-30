@@ -6,6 +6,7 @@
 @for $i from 10  through 1 {
 	$step : 10;
 	.col-#{$i}{width: $step*$i + %;}
+	.col-offset-#{$i}{margin-left: $step*$i + %;}
 }
 
 
@@ -22,6 +23,10 @@
 
 .flex-grow-1{
 	flex-grow: 1;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
 }
 
 

@@ -27,13 +27,13 @@ html {
 
 
 body{
-	background: #000;
-	font-family: 'proxima', Georgia, sans-serif;
-	color: $color3;
 	@include font-size(1.4);
+	background: #03151b;
+	color: $color3;
 	font-display: swap;
-	height: 100vh;
+	font-family: 'proxima', Georgia, sans-serif;
 	font-weight: 400;
+	height: 100vh;
 }
 
 html, body{
@@ -41,10 +41,7 @@ html, body{
 }
 
 
-.grid{
-	background: #031821 url(../images/bg.jpg) no-repeat ;
-	// background-size: cover;
-}
+
 
 
 @media (min-width: 1280px){
@@ -54,13 +51,15 @@ html, body{
 }
 
 
-.grid{
+.grid,
+.grid.inner{
 	transition: .3s transform ease-out;
 	transform-origin: 0 50%;
 }
 
 
 .m-modal-open .grid, 
+.m-modal-open .grid.inner, 
 .m-modal-open .outerwrapper {
     transform: rotateY(5deg);
 }
@@ -84,6 +83,16 @@ html, body{
 	min-height: 100vh;
 }
 
+.grid.inner{
+	display: grid;
+	grid-template-areas: "header"
+						 "neck"
+						 "main"
+						 "footer";
+	grid-template-rows: auto auto 1fr auto;	
+	min-height: 100vh;
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	//ie11
 }
@@ -103,7 +112,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 p{}
-a{color:#020000}
+a{color:#020000;}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
@@ -260,6 +269,13 @@ em strong
 	}
 }
 
+
+.flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* =header
 ---------------------------*/
 .header{
@@ -269,7 +285,7 @@ em strong
 		z-index: 2;
 	}
 	.logo{
-		margin-right: 1rem;
+		width: 160px;
 	}
 }
 
@@ -277,7 +293,6 @@ em strong
 	font-weight: 900;
 	text-transform: uppercase;
 	list-style: none;
-	padding-left: 3rem;
 	font-size: 1.5rem;
 	li{
 		margin-right: 4.8rem;

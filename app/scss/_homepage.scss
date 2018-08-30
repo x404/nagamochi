@@ -17,6 +17,9 @@
 
 .homepage{
 	position: relative;
+	.grid{
+		background: #031821 url(../images/bg.jpg) no-repeat ;
+	}
 	.intro{
 		margin-left: calc((100% - 1600px)/2);
 		padding-left: 9.5rem;
