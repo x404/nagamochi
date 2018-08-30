@@ -78,24 +78,31 @@
 
 	// right
 	.right{
-		width: 480px;
+		// width: 480px;
+		width: 525px;
 		position: relative;
 		top: -87px;
 		@extend .vline;
 		&:before{
 			height: 140px;
-			left: -110px;
+			// left: -110px;
+			left: -60px;
 			top: 20px;
 		}
 		.prevnext{
 			position: absolute;
-			left: -40px;
+			left: 16px;
 			bottom: 88px;
+			z-index: 100;
 		}
 		.new-title{
+			box-shadow: 0 0 20px #030C17;
+			background: #030C17;
 			position: absolute;
-			left: -56px;
+			left: 0;
 			top: 20px;
+			height: 395px;
+			z-index: 99;
 		}
 	}
 
