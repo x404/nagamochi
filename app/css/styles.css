@@ -562,7 +562,7 @@ strong,
   .tdu:hover, .modal-menu .menu a:hover {
     text-decoration: none; }
 
-.before, .vline:before, .homepage .intro:before, .homepage .right:before, .homepage .counter:before, .btn-learn-more:before, .mainnav a:after, .modal-menu .menu dd:before, .homepage .grid:after, .homepage .intro:after, .homepage .counter:after, .slick-arrow:before {
+.before, .vline:before, .homepage .intro:before, .homepage .right:before, .homepage .counter:before, .btn-learn-more:before, .mainnav a:after, .modal-menu .menu dd:before, .angle:after, .homepage .intro:after, .homepage .counter:after, .slick-arrow:before {
   content: "";
   display: block;
   position: absolute; }
@@ -970,18 +970,22 @@ form .form-control {
   .modal-menu .lang a:hover {
     border-bottom: 2px solid #fff; }
 
-.homepage {
-  position: relative;
+.angle {
+  position: fixed;
+  right: 0;
+  top: 0;
   height: 100vh;
-  overflow: hidden; }
-  .homepage .grid:after {
+  width: 600px; }
+  .angle:after {
     height: 0;
     width: 0;
-    right: 0;
     top: 0;
-    border-top: 105vh solid #0a0b0b;
+    border-top: 115vh solid #0a0b0b;
     border-left: 600px solid transparent;
     z-index: 1; }
+
+.homepage {
+  position: relative; }
   .homepage .intro {
     margin-left: calc((100% - 1600px)/2);
     padding-left: 9.5rem;
@@ -1042,7 +1046,8 @@ form .form-control {
     position: absolute;
     left: -5px;
     bottom: -162px;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    width: 21rem; }
     .homepage .counter:before {
       height: 80px;
       right: -45px;
