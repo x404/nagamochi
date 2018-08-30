@@ -88,19 +88,16 @@ $(document).ready(function(){
 
 
 // обратный звонок
-$(document).on('click', '[data-toggle="sidemodal"]', function(e){
+document.querySelector('[data-toggle="sidemodal"]').addEventListener('click', function(e){
 	e.stopPropagation();
 	let target = this.dataset.target,
 		title = this.dataset.title;
 	document.querySelector(target).classList.add('open');
 	document.querySelector('.body').classList.add('m-modal-open');
-	// if (title != undefined) document.querySelector(target + ' #place').value = title;
-});
+}, false);
 
 
-$(document).on('click', '.close-modal', function(e){
-	$(this).closest('.open').removeClass('open');
+document.querySelector('.close-modal').addEventListener('click', function(e){
+	this.closest('.open').classList.remove('open');
 	document.querySelector('.body').classList.remove('m-modal-open');
-	// document.querySelector('body').classList.remove('modal-open');
-	// document.querySelector('body').classList.remove('modal-open-my');
-});
+}, false);
