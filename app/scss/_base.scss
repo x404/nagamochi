@@ -538,7 +538,7 @@ form{
 	background: none;
 	border: none;
 	position: absolute;
-	right: -7px;
+	right: 0px;
 	top: 60px;
 	z-index: 99;
 	svg{
@@ -551,6 +551,182 @@ form{
 	&:hover{
 		svg{
 			@include rotation(90deg)
+		}
+	}
+}
+
+
+
+// modal menu
+.modal-menu
+{
+	background: rgba(0, 180, 169, .95);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	padding: 0 0 10rem;
+	position: fixed;
+	top: 0;
+	transform: translateY(-100%);
+	transition: .5s all;
+	width: 100%;
+	z-index: -1;
+	.inner{
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		overflow: auto;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+
+	.container{
+		padding: 5rem 24rem 2rem 0;
+		position: relative;
+	}
+	.row{
+		flex-wrap: nowrap;
+	}
+	.menu{
+		color: $color2;
+		a{
+			@extend .tdu;
+			color: $color2;
+			font-size: 1.5rem;
+			font-weight: 100;
+		}
+
+		.title,
+		dt{
+			font-size: 2.5rem;
+			position: relative;
+			margin-bottom: 25px;
+			font-weight: 700;
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			a{
+				font-size: inherit;
+				font-weight: inherit;
+				text-decoration: none;
+			}
+		}
+
+		.title{
+			&-mb{
+				margin-bottom: 5.5rem;
+			}
+		}
+
+
+		dd{
+			margin: 3rem 0;
+			padding-left: 2.2rem;
+			position: relative;
+			&:before{
+				@extend .before;
+				border-top: 2px solid $color2;
+				width: 12px;
+				left: 0;
+				top: 7px;
+			}
+			a{
+				font-size: 1.8rem;
+				text-decoration: none;
+				@extend .tdn;
+			}
+		}
+	}
+
+	.cell{
+		padding-top: 4.5rem;
+	}
+
+	.contacts{
+		font-size: 1.5rem;
+		letter-spacing: .1em;
+		&__inner{
+			border: 1px solid $color2;
+			padding: 4.2rem 4.7rem 5.5rem;	
+			width: 40rem;	
+		}
+
+		&__cell{
+			margin-top: 3rem;
+			p{
+				font-size: 1.8rem;
+				font-weight: 100;
+			}
+		}
+		.title{
+			font-family: 'proxima_novablack_italic';
+			position: relative;
+			line-height: 1.4;
+			margin-bottom: 0;
+			// margin-bottom: 2rem;
+		}
+		.tel,
+		.email{
+			text-decoration: none;
+			font-size: 3rem;
+		}
+		.email{
+			color: $color7;
+			font-weight: 100;
+			border-bottom: 1px solid ;
+			&:hover{
+				border-bottom: none;
+			}
+		}
+
+	}
+
+
+
+	.btn-callback{
+		border-color: $color2;
+		color: $color2;
+		margin-top: .8rem;
+	}
+
+	.address{
+		line-height: 1.5;
+		font-size: 2rem;
+		font-weight: 100;
+		letter-spacing: .04em;
+		margin-top: 1.2rem;
+
+		b, strong{
+			font-weight: 700;
+		}
+	}
+
+
+	&.open{
+		transform: translateY(0);
+		opacity: 1;
+		z-index: 9999;
+	}
+
+	.lang{
+		a{
+			text-decoration: none;
+		}
+
+		a, span{
+			display: inline-block;
+			border-bottom: 2px solid rgba(0,0,0,0);
+			transition: .3s;
+			font-weight: 500;
+			padding-bottom: 3px;
+		}
+
+		.current{
+			cursor: default;
+		}
+		.current,
+		a:hover{
+			border-bottom: 2px solid $color2;
 		}
 	}
 }

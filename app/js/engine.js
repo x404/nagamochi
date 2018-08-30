@@ -97,7 +97,26 @@ document.querySelector('[data-toggle="sidemodal"]').addEventListener('click', fu
 }, false);
 
 
-document.querySelector('.close-modal').addEventListener('click', function(e){
-	this.closest('.open').classList.remove('open');
-	document.querySelector('.body').classList.remove('m-modal-open');
-}, false);
+
+var closemodal = document.querySelectorAll('.close-modal');
+for (var i = 0; i < closemodal.length; i++) {
+    var self = closemodal[i];
+
+	self.addEventListener('click', function(e){
+		console.log("!");
+		this.closest('.open').classList.remove('open');
+		document.querySelector('.body').classList.remove('m-modal-open');
+	}, false);
+
+}
+
+
+$(document).on('click', '.extra-toggle', function(e){
+	if (window.innerWidth > 650) {
+		var modal = $(this).data('popup');
+		$('#' + modal).addClass('open');
+		// document.querySelector('body').classList.add('modal-open-my')
+	} else{
+		// document.querySelector('.apanel').classList.add('open');
+	}
+});

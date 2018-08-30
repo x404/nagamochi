@@ -305,6 +305,13 @@ template {
   font-weight: 900; }
 
 @font-face {
+  font-family: 'proxima';
+  src: url("../fonts/proxima_nova_black.woff2") format("woff2"), url("../fonts/proxima_nova_black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
   font-family: 'proxima_novablack_italic';
   src: url("../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff2") format("woff2"), url("../fonts/ProximaNova-BlackIt/proxima_nova_black_italic.woff") format("woff");
   font-weight: normal;
@@ -323,6 +330,13 @@ template {
   font-weight: normal;
   font-style: normal;
   font-weight: 400; }
+
+@font-face {
+  font-family: 'proxima';
+  src: url("../fonts/ProximaNova-Light/proxima_nova_light.woff2") format("woff2"), url("../fonts/ProximaNova-Light/proxima_nova_light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 100; }
 
 @font-face {
   font-family: 'proxima_novaregular_italic';
@@ -375,6 +389,11 @@ template {
 
 .col-1 {
   width: 10%; }
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }
 
 .d-flex {
   display: flex; }
@@ -533,17 +552,17 @@ strong,
 .bold {
   font-weight: 500; }
 
-.tdn {
+.tdn, .modal-menu .menu dd a {
   text-decoration: none; }
-  .tdn:hover {
+  .tdn:hover, .modal-menu .menu dd a:hover {
     text-decoration: underline; }
 
-.tdu {
+.tdu, .modal-menu .menu a {
   text-decoration: underline; }
-  .tdu:hover {
+  .tdu:hover, .modal-menu .menu a:hover {
     text-decoration: none; }
 
-.before, .vline:before, .homepage .intro:before, .homepage .right:before, .homepage .counter:before, .btn-learn-more:before, .mainnav a:after, .homepage .grid:after, .homepage .intro:after, .homepage .counter:after, .slick-arrow:before {
+.before, .vline:before, .homepage .intro:before, .homepage .right:before, .homepage .counter:before, .btn-learn-more:before, .mainnav a:after, .modal-menu .menu dd:before, .homepage .grid:after, .homepage .intro:after, .homepage .counter:after, .slick-arrow:before {
   content: "";
   display: block;
   position: absolute; }
@@ -820,7 +839,7 @@ form .form-control {
   background: none;
   border: none;
   position: absolute;
-  right: -7px;
+  right: 0px;
   top: 60px;
   z-index: 99; }
   .close-modal svg {
@@ -833,6 +852,123 @@ form .form-control {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
+
+.modal-menu {
+  background: rgba(0, 180, 169, 0.95);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 0 0 10rem;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%);
+  transition: .5s all;
+  width: 100%;
+  z-index: -1; }
+  .modal-menu .inner {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0; }
+  .modal-menu .container {
+    padding: 5rem 24rem 2rem 0;
+    position: relative; }
+  .modal-menu .row {
+    flex-wrap: nowrap; }
+  .modal-menu .menu {
+    color: #fff; }
+    .modal-menu .menu a {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 100; }
+    .modal-menu .menu .title,
+    .modal-menu .menu dt {
+      font-size: 2.5rem;
+      position: relative;
+      margin-bottom: 25px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase; }
+      .modal-menu .menu .title a,
+      .modal-menu .menu dt a {
+        font-size: inherit;
+        font-weight: inherit;
+        text-decoration: none; }
+    .modal-menu .menu .title-mb {
+      margin-bottom: 5.5rem; }
+    .modal-menu .menu dd {
+      margin: 3rem 0;
+      padding-left: 2.2rem;
+      position: relative; }
+      .modal-menu .menu dd:before {
+        border-top: 2px solid #fff;
+        width: 12px;
+        left: 0;
+        top: 7px; }
+      .modal-menu .menu dd a {
+        font-size: 1.8rem;
+        text-decoration: none; }
+  .modal-menu .cell {
+    padding-top: 4.5rem; }
+  .modal-menu .contacts {
+    font-size: 1.5rem;
+    letter-spacing: .1em; }
+    .modal-menu .contacts__inner {
+      border: 1px solid #fff;
+      padding: 4.2rem 4.7rem 5.5rem;
+      width: 40rem; }
+    .modal-menu .contacts__cell {
+      margin-top: 3rem; }
+      .modal-menu .contacts__cell p {
+        font-size: 1.8rem;
+        font-weight: 100; }
+    .modal-menu .contacts .title {
+      font-family: 'proxima_novablack_italic';
+      position: relative;
+      line-height: 1.4;
+      margin-bottom: 0; }
+    .modal-menu .contacts .tel,
+    .modal-menu .contacts .email {
+      text-decoration: none;
+      font-size: 3rem; }
+    .modal-menu .contacts .email {
+      color: #00ffef;
+      font-weight: 100;
+      border-bottom: 1px solid; }
+      .modal-menu .contacts .email:hover {
+        border-bottom: none; }
+  .modal-menu .btn-callback {
+    border-color: #fff;
+    color: #fff;
+    margin-top: .8rem; }
+  .modal-menu .address {
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: .04em;
+    margin-top: 1.2rem; }
+    .modal-menu .address b, .modal-menu .address strong {
+      font-weight: 700; }
+  .modal-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 9999; }
+  .modal-menu .lang a {
+    text-decoration: none; }
+  .modal-menu .lang a, .modal-menu .lang span {
+    display: inline-block;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: .3s;
+    font-weight: 500;
+    padding-bottom: 3px; }
+  .modal-menu .lang .current {
+    cursor: default; }
+  .modal-menu .lang .current,
+  .modal-menu .lang a:hover {
+    border-bottom: 2px solid #fff; }
 
 .homepage {
   position: relative;

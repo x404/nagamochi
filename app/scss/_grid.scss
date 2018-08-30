@@ -8,6 +8,14 @@
 	.col-#{$i}{width: $step*$i + %;}
 }
 
+
+.col{
+	flex-basis: 0;
+	flex-grow: 1; 
+	max-width: 100%;
+}
+
+
 .d-flex{
 	display: flex;
 }
