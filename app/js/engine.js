@@ -101,6 +101,11 @@ $(document).ready(function(){
 		]
 	});
 
+
+	// scroll
+	var nice = $('.selectize-dropdown-content').niceScroll({
+		autohidemode: false
+	}); 
 });
   
 

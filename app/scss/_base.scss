@@ -731,3 +731,26 @@ form{
 		}
 	}
 }
+
+
+
+.nicescroll-cursors{
+	border: none !important;
+	background: $color5 !important;
+	border-radius: 8px !important;
+	width: 9px !important;
+	left: 2px;
+}
+.nicescroll-rails{
+	left: calc(100% - 12px) !important;
+	background: #000;
+	width: 5px !important;
+	// height: calc(100% - 20px) !important;
+	// top: 10px !important;
+	border-radius: 10px;
+}
+
+.selectize-dropdown-content{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
