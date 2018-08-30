@@ -490,7 +490,7 @@ html, body {
   height: 100%; }
 
 .grid {
-  background: #031821 url(../images/bg.jpg) no-repeat center/cover; }
+  background: #031821 url(../images/bg.jpg) no-repeat; }
 
 @media (min-width: 1280px) {
   .body {
@@ -1019,15 +1019,15 @@ form .form-control {
     position: relative;
     z-index: 99; }
   .homepage .main-pic {
+    background: url(../images/disc.png) no-repeat;
     flex-grow: 1;
-    margin-left: -4rem; }
-    .homepage .main-pic img {
-      -webkit-animation: pulsing 10s infinite;
-      animation: pulsing 10s infinite; }
+    margin-left: -4rem;
+    width: 715px;
+    height: 730px; }
   .homepage .content {
     width: 100%; }
   .homepage .right {
-    width: 525px;
+    width: 560px;
     position: relative;
     top: -87px; }
     .homepage .right:before {
@@ -1036,7 +1036,7 @@ form .form-control {
       top: 20px; }
     .homepage .right .prevnext {
       position: absolute;
-      left: 16px;
+      left: 47px;
       bottom: 88px;
       z-index: 100; }
     .homepage .right .new-title {
@@ -1045,8 +1045,10 @@ form .form-control {
       position: absolute;
       left: 0;
       top: 20px;
+      width: 105px;
       height: 395px;
-      z-index: 99; }
+      z-index: 99;
+      padding-left: 25px; }
   .homepage .counter {
     position: absolute;
     left: -5px;

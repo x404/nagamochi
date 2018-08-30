@@ -42,7 +42,8 @@ html, body{
 
 
 .grid{
-	background: #031821 url(../images/bg.jpg) no-repeat center / cover;
+	background: #031821 url(../images/bg.jpg) no-repeat ;
+	// background-size: cover;
 }
 
 

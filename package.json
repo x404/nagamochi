@@ -27,5 +27,8 @@
     "gulp.spritesmith": "^6.5.1",
     "imagemin-pngquant": "^5.0.1",
     "pump": "^1.0.2"
+  },
+  "dependencies": {
+    "parallax_background": "^1.0.9"
   }
 }

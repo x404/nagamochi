@@ -63,12 +63,15 @@
 	}
 
 	.main-pic{
+		background: url(../images/disc.png) no-repeat;
 		flex-grow: 1;
 		margin-left: -4rem;
-		img{
-			-webkit-animation: pulsing 10s infinite;
-			animation: pulsing 10s infinite;
-		}
+		width: 715px;
+		height: 730px;
+		// img{
+			// -webkit-animation: pulsing 10s infinite;
+			// animation: pulsing 10s infinite;
+		// }
 	}
 
 	.content{
@@ -79,7 +82,8 @@
 	// right
 	.right{
 		// width: 480px;
-		width: 525px;
+		// width: 525px;
+		width: 560px;
 		position: relative;
 		top: -87px;
 		@extend .vline;
@@ -91,7 +95,7 @@
 		}
 		.prevnext{
 			position: absolute;
-			left: 16px;
+			left: 47px;
 			bottom: 88px;
 			z-index: 100;
 		}
@@ -101,8 +105,10 @@
 			position: absolute;
 			left: 0;
 			top: 20px;
+			width: 105px;
 			height: 395px;
 			z-index: 99;
+			padding-left: 25px;
 		}
 	}
 

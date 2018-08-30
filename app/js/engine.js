@@ -11,7 +11,7 @@ $(document).ready(function(){
 		arrows : true,
 		appendArrows : $('.prevnext'),
         centerMode: true,
-        centerPadding: '80px',
+        centerPadding: '110px',
         infinite : true
 	});
 
@@ -40,51 +40,69 @@ $(document).ready(function(){
 
 	$('select').selectize();
 
-	// // mobile-menu
-	// $('#navbar').each(function(){
-	// 	var $this = $(this),
-	// 		$link = $('.navbar-toggle'),
-	// 		$close = $('.close-menu'),
-
-	// 		init = function(){
-	// 			$link.on('click', openMenu);
-	// 			$close.on('click', closeMenu);
-	// 		},
-	// 		openMenu = function(e){
-	// 			e.preventDefault();
-	// 			h = $(document).height();
-	// 			$('body').addClass('o-menu');
-	// 			$('#navbar').height(h);
-
-	// 		},
-	// 		closeMenu = function(e){
-	// 			e.preventDefault();
-	// 			$('body').removeClass('o-menu');
-	// 			$('#navbar').height('auto');
-	// 		};
-	// 	init();
-	// });	
-
 		/* Time Parser */
-	  var inter = 1;
-		$('.cifr span').each(function() {
-		  $(this).attr('data-number', parseInt($(this).text()));
-			var count = parseInt($(this).attr('data-number')),
-				block = $(this),
-				timeout = null,
-				step = 1;
-			timeout = setInterval(function() {
-			  if (step == 25) {
-				block.text(count.toString());
-				clearInterval(timeout);
-			  } else {
-				block.text((Math.floor(count*step/25)).toString());
-				step++;
-			  }
-			}, 60);
-		});
-});
+	var inter = 1;
+	$('.cifr span').each(function() {
+	  $(this).attr('data-number', parseInt($(this).text()));
+		var count = parseInt($(this).attr('data-number')),
+			block = $(this),
+			timeout = null,
+			step = 1;
+		timeout = setInterval(function() {
+		  if (step == 25) {
+			block.text(count.toString());
+			clearInterval(timeout);
+		  } else {
+			block.text((Math.floor(count*step/25)).toString());
+			step++;
+		  }
+		}, 60);
+	});
 
+
+	let closemodal2 = document.querySelectorAll('.close-modal');
+	for (var i = 0; i < closemodal2.length; i++) {
+	    var self = closemodal2[i];
+
+		self.addEventListener('click', function(e){
+			this.closest('.open').classList.remove('open');
+			document.querySelector('.body').classList.remove('m-modal-open');
+		}, false);
+	}
+
+	$('body').parallax({
+		'elements': [
+			{
+				'selector': 'div.grid',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': -10,
+						'multiplier': 0.008,
+						'invert': false,
+						'unit': 'px'
+						}
+					}
+				}
+			},
+			{
+				'selector': 'div.main-pic',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': 0,
+						'multiplier': 0.03,
+						'invert': true,
+						'unit': 'px'
+						}
+					}
+				}
+			}
+		]
+	});
+
+});
+  
 
 
 // обратный звонок
@@ -97,19 +115,7 @@ document.querySelector('[data-toggle="sidemodal"]').addEventListener('click', fu
 }, false);
 
 
-
-var closemodal = document.querySelectorAll('.close-modal');
-for (var i = 0; i < closemodal.length; i++) {
-    var self = closemodal[i];
-
-	self.addEventListener('click', function(e){
-		console.log("!");
-		this.closest('.open').classList.remove('open');
-		document.querySelector('.body').classList.remove('m-modal-open');
-	}, false);
-
-}
-
+ 
 
 $(document).on('click', '.extra-toggle', function(e){
 	if (window.innerWidth > 650) {
@@ -120,3 +126,41 @@ $(document).on('click', '.extra-toggle', function(e){
 		// document.querySelector('.apanel').classList.add('open');
 	}
 });
+
+
+
+
+
+
+
+// var lFollowX = 0,
+//     lFollowY = 0,
+//     x = 0,
+//     y = 0,
+//     friction = 1 / 30;
+
+// function moveBackground() {
+//   x += (lFollowX - x) * friction;
+//   y += (lFollowY - y) * friction;
+  
+//   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+//   $('.main-pic').css({
+//     '-webit-transform': translate,
+//     '-moz-transform': translate,
+//     'transform': translate
+//   });
+
+//   window.requestAnimationFrame(moveBackground);
+// }
+
+// $(window).on('mousemove click', function(e) {
+
+//   var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+//   var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+//   lFollowX = (10 * lMouseX) / 70; // 100 : 12 = lMouxeX : lFollow
+//   lFollowY = (10 * lMouseY) / 70;
+
+// });
+
+// moveBackground(); 

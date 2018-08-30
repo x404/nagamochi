@@ -231,12 +231,13 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 	
 		// var buildJs = gulp.src(config.templateDir + '/js/**/*').pipe(gulp.dest(config.destDir + '/js'));
 
-
+ 
 	var buildJs = gulp.src([ // Переносим CSS стили в продакшен
 		config.templateDir + '/js/engine.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
-		config.templateDir + '/js/selectize.min.js'
+		config.templateDir + '/js/selectize.min.js',
+		config.templateDir + '/js/jquery.parallax-0.2-min.js'
 	])
 	.pipe(gulp.dest(config.destDir + '/js'));
 
