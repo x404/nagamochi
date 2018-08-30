@@ -60,7 +60,9 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/tab.js',
 				config.templateDir + '/js/popper.min.js',
-				config.templateDir + '/js/jquery.fancybox.min.js'
+				config.templateDir + '/js/jquery.fancybox.min.js',
+				config.templateDir + '/js/jquery.parallax-0.2-min.js'
+
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
 			uglify(), // Сжимаем JS файл
@@ -236,8 +238,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
 		config.templateDir + '/js/engine.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
-		config.templateDir + '/js/selectize.min.js',
-		config.templateDir + '/js/jquery.parallax-0.2-min.js'
+		config.templateDir + '/js/selectize.min.js'
 	])
 	.pipe(gulp.dest(config.destDir + '/js'));
 

@@ -172,7 +172,6 @@ em strong
 	&:focus,
 	&:active{
 		border-color: $color10;
-		// filter: none;
 	}
 }
 
@@ -216,7 +215,6 @@ em strong
 			width: 18px;
 			height: 12px;
 			@include sprite($icon-arrow-type-1);
-			// background: url(../images/arrow.png) no-repeat left center;
 			top: 40%;
 			left: 25px;
 		}
@@ -315,21 +313,6 @@ em strong
 ---------------------------*/
 
 
-
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
-
-/* =main
----------------------------*/
-
-.main{
-	aside{
-	}
-}
-
-
 .footer{
 	&__inner{
 		height: 10rem;		
@@ -388,7 +371,6 @@ form{
 			opacity: 1;
 			overflow: hidden;
 			position: absolute;
-			// padding-left: $pl;
 			text-overflow: ellipsis;
 			top: 7px;
 			transform-origin: left top 0;
@@ -445,7 +427,6 @@ form{
 
 
 .sidemodal{
-	// background: rgba(0,121,72,.97);
 	background: $color9;
 	color: $color2;
 	position: fixed;
@@ -455,7 +436,6 @@ form{
 	width: 48rem;
 	z-index: 505;
 	transform: translateX(100%);
-	 // transform: translateX(0);		
 	transition: .3s transform ease-out;
 
 	&.open{
@@ -512,14 +492,12 @@ form{
 
 	.textarea{
 		background:url('data:image/gif;base64,R0lGODlhAQAoAJECAAD+7gH+7gAAAAAAACH5BAEAAAIALAAAAAABACgAAAIHlI+pyxZQAAA7');
-		// background: url(../images/v.gif) ;
 		border: none;
 		line-height: 41px;
 		height: 120px;
 		overflow: hidden;
 		resize: none;
 		filter: grayscale(1) brightness(2);
-		// width: 100%;
 		&:active,
 		&:focus{
 			filter: none
@@ -679,7 +657,6 @@ form{
 				border-bottom: none;
 			}
 		}
-
 	}
 
 
@@ -742,12 +719,10 @@ form{
 	left: 2px;
 }
 .nicescroll-rails{
-	left: calc(100% - 12px) !important;
-	background: #000;
-	width: 5px !important;
-	// height: calc(100% - 20px) !important;
-	// top: 10px !important;
 	border-radius: 10px;
+	background: #000;
+	left: calc(100% - 12px) !important;
+	width: 5px !important;
 }
 
 .selectize-dropdown-content{

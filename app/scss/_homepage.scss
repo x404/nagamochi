@@ -17,7 +17,6 @@
 
 .homepage{
 	position: relative;
-	// height: 100vh;
 	.intro{
 		margin-left: calc((100% - 1600px)/2);
 		padding-left: 9.5rem;
@@ -68,10 +67,6 @@
 		margin-left: -4rem;
 		width: 715px;
 		height: 730px;
-		// img{
-			// -webkit-animation: pulsing 10s infinite;
-			// animation: pulsing 10s infinite;
-		// }
 	}
 
 	.content{
@@ -81,15 +76,12 @@
 
 	// right
 	.right{
-		// width: 480px;
-		// width: 525px;
 		width: 560px;
 		position: relative;
 		top: -87px;
 		@extend .vline;
 		&:before{
 			height: 140px;
-			// left: -110px;
 			left: -60px;
 			top: 20px;
 		}
@@ -100,7 +92,6 @@
 			z-index: 100;
 		}
 		.new-title{
-			// box-shadow: 0 0 20px #030C17;
 			background: $color9;
 			position: absolute;
 			left: 0;
@@ -205,35 +196,4 @@
 			box-shadow: 0 0 20px rgba(0,255,239,.5);			
 		}
 	}
-}
-
-
-@-webkit-keyframes pulsing {
-  0% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9)
-  }
-  50% {
-    -webkit-transform: scale(1.0, 1.0);
-    transform: scale(1.0, 1.0);
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
-}
-
-@keyframes pulsing {
-  0% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9)
-  }
-  50% {
-    -webkit-transform: scale(1.0, 1.0);
-    transform: scale(1.0, 1.0);
-  }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9);
-  }
 }

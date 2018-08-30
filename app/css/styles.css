@@ -684,12 +684,6 @@ strong,
 
 /* =/header
 ---------------------------*/
-/* =navigation
----------------------------*/
-/* =/navigation
----------------------------*/
-/* =main
----------------------------*/
 .footer__inner {
   height: 10rem; }
 
@@ -978,10 +972,10 @@ form .form-control {
   left: 2px; }
 
 .nicescroll-rails {
-  left: calc(100% - 12px) !important;
+  border-radius: 10px;
   background: #000;
-  width: 5px !important;
-  border-radius: 10px; }
+  left: calc(100% - 12px) !important;
+  width: 5px !important; }
 
 .selectize-dropdown-content {
   margin-top: 10px;
@@ -1131,28 +1125,6 @@ form .form-control {
 
 #news-carousel .slick-current:hover a {
   box-shadow: 0 0 20px rgba(0, 255, 239, 0.5); }
-
-@-webkit-keyframes pulsing {
-  0% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9); }
-  50% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1); }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9); } }
-
-@keyframes pulsing {
-  0% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9); }
-  50% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1); }
-  100% {
-    -webkit-transform: scale(0.9, 0.9);
-    transform: scale(0.9, 0.9); } }
 
 /* =mobile-menu
 ---------------------------*/
