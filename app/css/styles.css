@@ -1760,6 +1760,16 @@ aside {
     #navbar .nav-tabs > li {
       margin: 0; } }
 
+.svg-triangle {
+  margin: 0 auto;
+  width: 200px;
+  height: 100px; }
+
+.svg-triangle polygon {
+  fill: #98d02e;
+  stroke: #65b81d;
+  stroke-width: 2; }
+
 .main-contacts {
   background: #019187 url(../images/contact-bg.jpg) no-repeat;
   position: relative;
@@ -1773,27 +1783,28 @@ aside {
   .main-contacts:before {
     right: 38%;
     top: 0;
-    width: 0;
-    height: 0;
-    border-top: calc(100vh - 220px) solid #13242b;
-    border-left: 150px solid transparent; }
+    background: url(../images/triangle.svg) no-repeat;
+    height: 100%;
+    width: 200px; }
   .main-contacts .container {
     align-items: center;
     display: flex;
     height: 100%; }
-  .main-contacts .content main {
-    color: #fff; }
-    .main-contacts .content main h1 {
-      font-size: 6rem;
-      margin-bottom: 3.5rem; }
-    .main-contacts .content main p {
-      line-height: 1.6;
-      font-size: 2rem; }
-    .main-contacts .content main h3 {
-      margin-bottom: 3.5rem; }
-    .main-contacts .content main .address {
-      font-size: 2rem;
-      margin-bottom: 3rem; }
+  .main-contacts .content {
+    padding: 2rem 0; }
+    .main-contacts .content main {
+      color: #fff; }
+      .main-contacts .content main h1 {
+        font-size: 6rem;
+        margin-bottom: 3.5rem; }
+      .main-contacts .content main p {
+        line-height: 1.6;
+        font-size: 2rem; }
+      .main-contacts .content main h3 {
+        margin-bottom: 3.5rem; }
+      .main-contacts .content main .address {
+        font-size: 2rem;
+        margin-bottom: 3rem; }
   .main-contacts .contacts__cell {
     margin-top: 1.7rem; }
     .main-contacts .contacts__cell p {
@@ -1815,6 +1826,7 @@ aside {
         border-bottom: none; }
   .main-contacts .callback__form {
     margin-left: 11.5rem;
+    padding: 2rem 0;
     position: relative;
     z-index: 2;
     width: 36rem; }

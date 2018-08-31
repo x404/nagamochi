@@ -1,3 +1,15 @@
+.svg-triangle{
+	margin: 0 auto;
+	width: 200px;
+	height: 100px;		
+}		
+
+.svg-triangle polygon {
+	fill:#98d02e;
+	stroke:#65b81d;
+	stroke-width:2;
+}
+
 .main-contacts{
 	background: #019187 url(../images/contact-bg.jpg) no-repeat;
 	position: relative;
@@ -16,10 +28,13 @@
 	&:before{
 		right: 38%;
 		top: 0;
-		width: 0;
-		height: 0;
-		border-top: calc(100vh - 220px) solid #13242b; 
-		border-left: 150px solid transparent;
+		background: url(../images/triangle.svg) no-repeat;
+		height: 100%;
+		width: 200px;
+		// width: 0;
+		// height: 0;
+		// border-top: calc(100vh - 220px) solid #13242b; 
+		// border-left: 150px solid transparent;
 	}
 
 	.container{
@@ -29,6 +44,7 @@
 	}
 	
 	.content{
+		padding: 2rem 0; 
 		main{
 			color: $color2;
 			h1{
@@ -80,6 +96,7 @@
 
 	.callback__form{
 		margin-left: 11.5rem;
+		padding: 2rem 0; 
 		position: relative;
 		z-index: 2;
 		width: 36rem;
