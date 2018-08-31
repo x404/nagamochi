@@ -51,15 +51,16 @@ html, body{
 }
 
 
-.grid,
-.grid.inner{
+// .grid.inner
+.grid
+{
 	transition: .3s transform ease-out;
 	transform-origin: 0 50%;
 }
 
 
+// .m-modal-open .grid.inner, 
 .m-modal-open .grid, 
-.m-modal-open .grid.inner, 
 .m-modal-open .outerwrapper {
     transform: rotateY(5deg);
 }
@@ -83,15 +84,15 @@ html, body{
 	min-height: 100vh;
 }
 
-.grid.inner{
-	display: grid;
-	grid-template-areas: "header"
-						 "neck"
-						 "main"
-						 "footer";
-	grid-template-rows: auto auto 1fr auto;	
-	min-height: 100vh;
-}
+// .grid.inner{
+// 	display: grid;
+// 	grid-template-areas: "header"
+// 						 "neck"
+// 						 "main"
+// 						 "footer";
+// 	grid-template-rows: auto auto 1fr auto;	
+// 	min-height: 100vh;
+// }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	//ie11
@@ -416,6 +417,10 @@ form{
 		label{
 			@include transform(translate3d(0,-7px,0) scale(.8));
 		}
+		input,
+		textarea{
+			outline: none;
+		}
 		.name-field{
 			opacity: 1;
 		}
@@ -443,8 +448,43 @@ form{
 		border: none;
 		border-bottom: 2px solid #fff;
 		color: #fff;
-		letter-spacing: .1em
+		letter-spacing: .1em;
+		width: 100%;
 	}
+
+	.input-field{
+		margin-top: 3.2rem;
+		label{
+			font-size: 1.7rem;
+		}
+	}
+
+	.submit{
+		border-radius: 5rem;
+		font-size: 1.7rem;
+		height: 5rem;
+		margin-top: 2.5rem;
+		width: 16rem;
+	}
+
+
+	.textarea{
+		background:url('data:image/gif;base64,R0lGODlhAQAoAJECAAD+7gH+7gAAAAAAACH5BAEAAAIALAAAAAABACgAAAIHlI+pyxZQAAA7');
+		border: none;
+		line-height: 41px;
+		height: 120px;
+		overflow: hidden;
+		resize: none;
+		filter: grayscale(1) brightness(2);
+		&:active,
+		&:focus{
+			filter: none
+		}
+	}
+
+	.captcha{
+		margin-top: 3.2rem;
+	}	
 }
 
 
@@ -495,45 +535,8 @@ form{
 		padding-right: 2rem;
 	}
 
-	.input-field{
-		margin-top: 3.2rem;
-		label{
-			font-size: 1.7rem;
-		}
-	}
 
-	.submit{
-		border-radius: 5rem;
-		font-size: 1.7rem;
-		height: 5rem;
-		margin-top: 2.5rem;
-		width: 16rem;
-	}
-
-	.form-control{
-		width: 100%;
-	}
-
-	.textarea{
-		background:url('data:image/gif;base64,R0lGODlhAQAoAJECAAD+7gH+7gAAAAAAACH5BAEAAAIALAAAAAABACgAAAIHlI+pyxZQAAA7');
-		border: none;
-		line-height: 41px;
-		height: 120px;
-		overflow: hidden;
-		resize: none;
-		filter: grayscale(1) brightness(2);
-		&:active,
-		&:focus{
-			filter: none
-		}
-	}
-
-	.captcha{
-		margin-top: 3.2rem;
-	}
 }
-
-
 
 
 .close-modal{
@@ -666,7 +669,6 @@ form{
 			position: relative;
 			line-height: 1.4;
 			margin-bottom: 0;
-			// margin-bottom: 2rem;
 		}
 		.tel,
 		.email{

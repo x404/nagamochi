@@ -84,7 +84,7 @@
 
 /* =more list
 ---------------------------*/
-.inner {
+.inner{
 	.more-list{
 		padding: 4rem 8rem 2rem;
 		h1{
@@ -98,7 +98,7 @@
 		main{
 			color: #c7dce3;
 			font-size: 1.7rem;
-			line-height: 2;
+			line-height: 1.8;
 			letter-spacing: .1em;
 
 			h1, h2, h3, h4, h5, h6{
@@ -121,7 +121,6 @@
 			h3{
 				font-family: 'proxima_novablack_italic';
 				line-height: 1.4;
-				// font-size: 1.7rem;
 				font-size: 3rem;
 				font-weight: 500;
 			}
@@ -160,7 +159,6 @@
 			}
 
 			p{
-				// margin: 3rem 0;
 				margin: .3rem 0;
 			} 
 
@@ -197,56 +195,56 @@
 
 
 
-	// ol
-	ol{
-		counter-reset:li;
-		margin-left: 0;
-		list-style: none;
-		font-size: 1.6rem;
-		margin-bottom: 2rem;
-		& li{
-			// color: #00b4a9;
-			// margin: 2rem 0;
-			position: relative;
-			padding-left: 30px;
-			&:before{
-				// background: $color_1;
-				color: #00b4a9;
-				$s: 3.1rem;
-				// height: $s;
-				// width: $s;
-				border-radius: $s;
-				content: counter(li) ")";; /* В качестве данных используем счетчик */
-				counter-increment:li; /* Увеличиваем значение счетчика на 1 */
-				/* Позиционируем и стилизируем цифры */
-				position:absolute;
-				text-align: center;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				top:0px;
-				left:0;
-				font-size: 1.7rem;
-				font-weight: 500;
-			}
+			// ol
 			ol{
 				counter-reset:li;
-				margin-left: -10px;
-				li{
+				margin-left: 0;
+				list-style: none;
+				font-size: 1.6rem;
+				margin-bottom: 2rem;
+				& li{
+					// color: #00b4a9;
+					// margin: 2rem 0;
+					position: relative;
 					padding-left: 30px;
 					&:before{
-						background: none;
+						// background: $color_1;
 						color: #00b4a9;
-						content: counter(li) ")";
-						display: block;
+						$s: 3.1rem;
+						// height: $s;
+						// width: $s;
+						border-radius: $s;
+						content: counter(li) ")";; /* В качестве данных используем счетчик */
+						counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+						/* Позиционируем и стилизируем цифры */
+						position:absolute;
+						text-align: center;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						top:0px;
+						left:0;
+						font-size: 1.7rem;
 						font-weight: 500;
-						top: 0;
+					}
+					ol{
+						counter-reset:li;
+						margin-left: -10px;
+						li{
+							padding-left: 30px;
+							&:before{
+								background: none;
+								color: #00b4a9;
+								content: counter(li) ")";
+								display: block;
+								font-weight: 500;
+								top: 0;
 
+							}
+						}
 					}
 				}
 			}
-		}
-	}
 
 			ul{
 				list-style: none;
