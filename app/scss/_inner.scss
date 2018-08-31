@@ -1,6 +1,6 @@
 .neck{
 	background: $color5;
-	padding: 2.7rem 0;
+	padding: 3.5rem 0;
 	letter-spacing: .1em;
 	ul{
 		font-size: 1.8rem;
@@ -9,7 +9,7 @@
 		a,
 		span{
 			border-radius: 4rem;
-			padding: 1rem 1.8rem;
+			padding: 0.7rem 1.4rem;
 			text-decoration: none;
 			color: $color2;
 			border: 2px solid rgba(255,255,255,0);
@@ -26,7 +26,7 @@
 
 .inner{
 	.main{
-		padding-top: 7rem;
+		padding-top: 5.7rem;
 		h1{
 			color: $color2;
 			font-family: 'proxima_novablack_italic';
@@ -47,7 +47,7 @@
 	$w: 36.5rem;
 	&__item{
 		letter-spacing: .1em;
-		margin: 5rem 9.2rem 9rem 0;
+		margin: 5rem 9.2rem 1.7rem 0;
 		width: $w;
 		p{
 			color: $color13;
@@ -57,7 +57,7 @@
 
 	&__link{
 		display: block;
-		line-height: 1.5;
+		line-height: 1.8;
 		text-decoration: none;
 		&:hover{
 			.new{
@@ -102,7 +102,8 @@
 		color: $color2;
 		font-family: 'proxima_novabold_italic';
 		font-size: 2rem;
-		margin: 4rem 0 1.2rem;
+		line-height: 1.5;
+		margin: 3.6rem 0 1.1rem;
 		text-transform: uppercase;
 		transition: .3s color;
 	}
@@ -118,9 +119,7 @@
 	@extend .flex-center;
 	font-family: 'proxima_novabold_italic';
 	font-size: 2rem;
-	margin-bottom: 3rem;
-	margin-top: 5rem;
-	padding: 2rem 0;
+	margin: 5rem 0 3rem -5%;
 	width: calc(100% - 12px);
 	a, span{
 		@extend .flex-center;

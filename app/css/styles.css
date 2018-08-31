@@ -694,7 +694,7 @@ strong,
 ---------------------------*/
 .header__inner {
   position: relative;
-  height: 14rem;
+  height: 12rem;
   z-index: 2; }
 
 .header .logo {
@@ -1028,7 +1028,7 @@ form .form-control {
 
 .neck {
   background: #00b4a9;
-  padding: 2.7rem 0;
+  padding: 3.5rem 0;
   letter-spacing: .1em; }
   .neck ul {
     font-size: 1.8rem;
@@ -1037,7 +1037,7 @@ form .form-control {
     .neck ul a,
     .neck ul span {
       border-radius: 4rem;
-      padding: 1rem 1.8rem;
+      padding: 0.7rem 1.4rem;
       text-decoration: none;
       color: #fff;
       border: 2px solid rgba(255, 255, 255, 0); }
@@ -1046,7 +1046,7 @@ form .form-control {
     cursor: default; }
 
 .inner .main {
-  padding-top: 7rem; }
+  padding-top: 5.7rem; }
   .inner .main h1 {
     color: #fff;
     font-family: 'proxima_novablack_italic';
@@ -1057,7 +1057,7 @@ form .form-control {
 ---------------------------*/
 .new__item {
   letter-spacing: .1em;
-  margin: 5rem 9.2rem 9rem 0;
+  margin: 5rem 9.2rem 1.7rem 0;
   width: 36.5rem; }
   .new__item p {
     color: #c2ced2;
@@ -1065,7 +1065,7 @@ form .form-control {
 
 .new__link {
   display: block;
-  line-height: 1.5;
+  line-height: 1.8;
   text-decoration: none; }
   .new__link:hover .new__title {
     color: #00feee; }
@@ -1095,7 +1095,8 @@ form .form-control {
   color: #fff;
   font-family: 'proxima_novabold_italic';
   font-size: 2rem;
-  margin: 4rem 0 1.2rem;
+  line-height: 1.5;
+  margin: 3.6rem 0 1.1rem;
   text-transform: uppercase;
   transition: .3s color; }
 
@@ -1104,9 +1105,7 @@ form .form-control {
 .pagination {
   font-family: 'proxima_novabold_italic';
   font-size: 2rem;
-  margin-bottom: 3rem;
-  margin-top: 5rem;
-  padding: 2rem 0;
+  margin: 5rem 0 3rem -5%;
   width: calc(100% - 12px); }
   .pagination a, .pagination span {
     text-align: center; }
