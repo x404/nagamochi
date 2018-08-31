@@ -607,7 +607,7 @@ strong,
 
 .before, .vline:before, .homepage .intro:before, .homepage .right:before, .homepage .counter:before, .btn-learn-more:before, .mainnav a:after,
 .mainnav span:after, .modal-menu .menu dd:before, .pagination .prev:before,
-.pagination .next:before, .back__link:before, .new__thumb:before, .new__thumb:after, .inner .content main ul li:before, .angle:after, .homepage .intro:after, .homepage .counter:after, .main-contacts:after, .main-contacts:before, .main-about .text .title:after, .main-about .title:after, .advantages:before, .advantages__cell:after, .group__link:before, .slick-arrow:before {
+.pagination .next:before, .back__link:before, .new__thumb:before, .new__thumb:after, .inner .content main ul li:before, .angle:after, .homepage .intro:after, .homepage .counter:after, .main-contacts:after, .main-contacts:before, .main-about .text .head:after, .main-about .title:after, .advantages:before, .advantages__cell:after, .group__link:before, .slick-arrow:before {
   content: "";
   display: block;
   position: absolute; }
@@ -1847,25 +1847,27 @@ aside {
     background-size: cover; }
     .main-about .bg .d-flex {
       height: 190px; }
-  .main-about .text .title {
+  .main-about .text .head {
     font-family: 'proxima_novablack_italic';
-    margin-top: 6rem;
+    margin-top: 8.3rem;
     text-transform: uppercase;
     position: relative;
     font-size: 4rem;
     color: #fff;
     letter-spacing: .1em;
     display: inline-block; }
-    .main-about .text .title:after {
+    .main-about .text .head:after {
       border-top: 1px solid #00b4a9;
       right: -217px;
       top: 15px;
-      width: 128px; }
+      width: 128px;
+      border-bottom: none; }
   .main-about .text .subtitle {
     color: #00c1b5;
     font-family: 'proxima_novabold_italic';
     font-size: 3rem;
-    letter-spacing: .1em; }
+    letter-spacing: .1em;
+    margin-top: 1.2rem; }
     .main-about .text .subtitle span {
       color: #fff;
       display: inline-block;
@@ -1877,7 +1879,7 @@ aside {
     font-size: 1.8rem;
     line-height: 2;
     padding-left: 9.5rem;
-    margin: 6rem 0; }
+    margin: 5.7rem 0; }
   .main-about .title {
     color: #fff;
     font-family: 'proxima_novablack_italic';
@@ -1885,7 +1887,7 @@ aside {
     letter-spacing: .05em;
     position: relative;
     padding-bottom: 2.5rem;
-    margin-bottom: 5.5rem;
+    margin-bottom: 6.4rem;
     text-transform: uppercase; }
     .main-about .title:after {
       border-bottom: 1px solid #00b4a9;
@@ -1962,7 +1964,7 @@ aside {
   z-index: 2; }
 
 .group__title {
-  margin-top: 1.5rem;
+  margin-top: 2.2rem;
   min-height: 4.5rem;
   letter-spacing: .1em;
   text-transform: uppercase; }
@@ -1993,7 +1995,9 @@ aside {
   font-weight: 100; }
 
 .coverage {
-  padding: 10rem 0; }
+  padding: 11rem 0; }
+  .coverage .title {
+    margin-bottom: 4.5rem; }
   .coverage__signature {
     font-size: 1.6rem;
     color: #e3e3e3;

@@ -9,9 +9,9 @@
 	}
 
 	.text{
-		.title{
+		.head{
 			font-family: 'proxima_novablack_italic';
-			margin-top: 6rem;
+			margin-top: 8.3rem;
 			text-transform: uppercase;
 			position: relative;
 			font-size: 4rem;
@@ -24,6 +24,7 @@
 				right: -217px;
 				top: 15px;
 				width: 128px;
+				border-bottom: none;
 			}
 		}
 		.subtitle{
@@ -32,6 +33,7 @@
 			font-family: 'proxima_novabold_italic';
 			font-size: 3rem;
 			letter-spacing: .1em;
+			margin-top: 1.2rem;
 			span{
 				color: $color2;
 				display: inline-block;
@@ -45,7 +47,7 @@
 			font-size: 1.8rem;
 			line-height: 2;
 			padding-left: 9.5rem;
-			margin: 6rem 0;
+			margin: 5.7rem 0;
 		}
 	}
 
@@ -56,7 +58,7 @@
 		letter-spacing: .05em;
 		position: relative;
 		padding-bottom: 2.5rem;
-		margin-bottom: 5.5rem;
+		margin-bottom: 6.4rem;
 		text-transform: uppercase;
 		&:after{
 			@extend .before;
@@ -157,7 +159,7 @@
 		z-index: 2;
 	}
 	&__title{
-		margin-top: 1.5rem;
+		margin-top: 2.2rem;
 		min-height: 4.5rem;
 		letter-spacing: .1em;
 		text-transform: uppercase;
@@ -203,7 +205,10 @@
 	$color2: #e3e3e3;
 	$color3: #0068b4;
 	$color4: #955faa;
-	padding: 10rem 0;
+	padding: 11rem 0;
+	.title{
+		margin-bottom: 4.5rem;
+	}
 
 	&__signature{
 		font-size: 1.6rem;
