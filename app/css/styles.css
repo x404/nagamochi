@@ -441,6 +441,9 @@ template {
 .justify-content-between {
   justify-content: space-between; }
 
+.justify-content-center {
+  justify-content: center; }
+
 .justify-content-end {
   justify-content: flex-end; }
 
@@ -1879,9 +1882,9 @@ aside {
     color: #fff;
     font-family: 'proxima_novablack_italic';
     font-size: 4rem;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     position: relative;
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
     margin-bottom: 5.5rem;
     text-transform: uppercase; }
     .main-about .title:after {
@@ -1991,6 +1994,77 @@ aside {
 
 .coverage {
   padding: 10rem 0; }
+  .coverage__signature {
+    font-size: 1.6rem;
+    color: #e3e3e3;
+    margin-top: 5rem; }
+    .coverage__signature .color1 .circle {
+      background-color: #00b4a9; }
+    .coverage__signature .color2 .circle {
+      background-color: #e3e3e3; }
+    .coverage__signature .color3 .circle {
+      background-color: #0068b4; }
+    .coverage__signature .color4 .circle {
+      background-color: #955faa; }
+    .coverage__signature .circle {
+      border-radius: 50%;
+      height: 30px;
+      margin-right: 1.1rem;
+      width: 30px; }
+  .coverage .signature__item {
+    display: flex;
+    align-items: center;
+    margin-right: 4.2rem; }
+    .coverage .signature__item:last-child {
+      margin-right: 0; }
+  .coverage__row {
+    display: flex;
+    margin-bottom: 4.3rem; }
+  .coverage__title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .coverage .columns {
+    height: 36px;
+    margin-left: 1.7rem;
+    margin-right: 9.5rem;
+    position: relative; }
+  .coverage .over {
+    background: url(../images/columns.png) repeat-x;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    height: 36px; }
+  .coverage .column {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: 0; }
+    .coverage .column-color1 {
+      background-color: #00b4a9; }
+    .coverage .column-color2 {
+      background-color: #e3e3e3; }
+    .coverage .column-color3 {
+      background-color: #0068b4; }
+    .coverage .column-color4 {
+      background-color: #955faa; }
+
+.dots {
+  position: absolute;
+  top: -31px;
+  width: 100%; }
+  .dots .dot {
+    background: url(../images/dot.png) no-repeat center bottom;
+    color: #616f74;
+    font-size: 1.1rem;
+    height: 24px;
+    padding-bottom: 37px;
+    position: absolute;
+    width: 24px;
+    z-index: 15; }
 
 /* Slider */
 .slick-slider {
