@@ -112,7 +112,7 @@ input::-moz-focus-inner{
 
 /*** standart classes *****/
 p{}
-a{color:#020000;}
+a{color:#020000; transition: .3s;}
 h1{font-size:2.5rem}
 h2{font-size:2.4rem}
 h3{font-size:1.6rem}
@@ -301,12 +301,15 @@ em strong
 			margin-right: 0;
 		}
 	}
-	a{
+	a,
+	span
+	{
 		color: $color2;
 		text-decoration: none;
 		position: relative;
 		transition: .3s color;
 		&:after{
+			bottom: -5px;
 			transition: .3s;
 			@extend .before;
 			background: $color7;
@@ -320,6 +323,12 @@ em strong
 				width: 100%;
 				left: 0;		
 			}
+		}
+	}
+
+	span{
+		&:after{
+			width: 100%;
 		}
 	}
 }

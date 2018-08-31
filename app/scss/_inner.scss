@@ -37,80 +37,9 @@
 }
 
 
-/* =news
----------------------------*/
-.list-news{
-
+aside{
+	background-color: $color9;
 }
-
-.new{
-	$w: 36.5rem;
-	&__item{
-		letter-spacing: .1em;
-		margin: 5rem 9.2rem 1.7rem 0;
-		width: $w;
-		p{
-			color: $color13;
-			font-weight: 100;
-		}
-	}
-
-	&__link{
-		display: block;
-		line-height: 1.8;
-		text-decoration: none;
-		&:hover{
-			.new{
-				&__title{
-					color: $color14;
-				}
-				&__thumb{
-					box-shadow: 0 0 15px $color14;
-				}
-			}
-		}
-	}
-
-	&__thumb{
-		transition: .3s box-shadow;
-		position: relative;
-		z-index: 1;
-		&:before,
-		&:after{
-			@extend .before;
-			background-color: rgba(0, 180, 170, .2);
-			width: 100%;
-			height: 100%;
-		}
-		&:before{
-			left: 10px;
-			top: 10px;
-		}
-		&:after{
-			left: 20px;
-			top: 20px;
-		}
-
-		img{
-			display: block;
-			position: relative;
-			z-index: 2;
-		}
-	}
-
-	&__title{
-		color: $color2;
-		font-family: 'proxima_novabold_italic';
-		font-size: 2rem;
-		line-height: 1.5;
-		margin: 3.6rem 0 1.1rem;
-		text-transform: uppercase;
-		transition: .3s color;
-	}
-}
-
-/* =/news
----------------------------*/
 
 
 // =pagination
@@ -203,3 +132,30 @@
 	}
 }
 // =/pagination
+
+.back{
+	font-size: 2rem;
+	font-family: 'proxima_novabold_italic';
+	&__link{
+		color: $color15;
+		padding-left: 37px;
+		position: relative;
+		text-decoration: none;
+		&:hover{
+			color: $color7;
+			&:before{
+				filter: none;
+			}
+		}
+		&:before{
+			@extend .before;
+			background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAMAAAD6xte7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEUGsKYFsKYGr6UEsaYEsacDsacDsqcCsqgCs6gBs6gBs6kAtKkGsKYGsKYGr6UEsaYEsacEsaYDsacDsacEsacDsqcDsqcCs6gCs6gBs6gBs6gBs6kBs6kAtKkBs6kAtKkAtKkAtKkBs6kBs6kEsaYDsacCsqgBs6gBs6kAtKn///9XfAAUAAAAJHRSTlMAAAAAAAAAAAAAAAAVq2YV0rcV0tUV0hXS0hXVvbcV0hXVq2ZnuDLSAAAAAWJLR0QqU77UngAAAAd0SU1FB+IIHwwID/4uctwAAACpSURBVBjTPY6JEoMgDEQXRSDQ01ZbtR49xf//wSZqu5DJ8pKdAYACNtudShKIlFJQaZruD6+jYiM+1RqZ1vnpfc51pjP2XAbGFuWnLIwxGZdxXHCX61jVzlnL11py5FBXjIjcKiLyaMYY4xTjOIt7vKGZRHFaEc9bdP3UDyEE74mPZxcQhhkKYgWB8H/oly3ZCwLvHSfJ/7ILbEl+QUHCkJHvHk+ihfLzC0DwEN+LSxliAAAAAElFTkSuQmCC") no-repeat;
+			width: 19px;
+			height: 14px;
+			left: 0;
+			top: 4px;
+			filter: grayscale(1) brightness(0.8);
+			transition: .3s filter;
+		}
+	}
+}
