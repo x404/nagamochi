@@ -86,10 +86,11 @@
 ---------------------------*/
 .inner {
 	.more-list{
-		padding: 4.5rem 8rem;
+		padding: 4rem 8rem 2rem;
 		h1{
 			font-size: 4rem;
 			text-transform: uppercase;
+			margin-bottom: 3.5rem;
 		}
 	}
 
@@ -98,6 +99,7 @@
 			color: #c7dce3;
 			font-size: 1.7rem;
 			line-height: 2;
+			letter-spacing: .1em;
 
 			h1, h2, h3, h4, h5, h6{
 				color: #fff;
@@ -109,6 +111,7 @@
 			h1{
 				font-size: 4rem;
 				line-height: 1.2;
+				margin-bottom: 2rem;
 			}
 			h2{
 				font-family: 'proxima_novablack_italic';
@@ -143,6 +146,11 @@
 				}
 			}
 
+			p > strong{
+				font-size: inherit;
+				color: inherit; 
+			}
+
 			strong{
 				font-weight: 500;
 			}
@@ -152,14 +160,15 @@
 			}
 
 			p{
-				margin: 3rem 0;
-			}
+				// margin: 3rem 0;
+				margin: .3rem 0;
+			} 
 
 			img{
 				max-width: 100%;
 			}
 
-			img.justifyleft, table.justifyleft {float:left; margin-right:20px;margin-bottom:10px;margin-top: 20px;}
+			img.justifyleft, table.justifyleft {float:left; margin-right:20px;margin-bottom:10px;margin-top: 10px;}
 			img.justifyright, table.justifyright {float:right; margin-left:10px;margin-bottom:10px;}
 			img.justifycenter, table.justifycenter { display: block; margin-left: auto; margin-right: auto;}
 
@@ -273,7 +282,7 @@
 				margin: 3rem 0 5rem; 
 				tr{
 					th, td{
-						padding: 1.8rem 1.5rem 1.8rem 2.8rem;
+						padding: 1.8rem .2rem 1.8rem 2.8rem;
 						text-align: left;
 					}
 					th{
@@ -285,6 +294,8 @@
 					}
 					td{
 						border-bottom: 1px solid #1c2d33;
+						padding-top: 3rem;
+						padding-bottom: 3rem;
 					}
 				}
 			}
@@ -295,7 +306,7 @@
 .more{
 	&__item{
 		margin-top: 2rem;
-		padding-bottom: 2rem;
+		padding-bottom: 2.5rem;
 		border-bottom: 1px solid #36454b;
 		&:last-child{
 			border-bottom: none;

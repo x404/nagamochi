@@ -39,6 +39,8 @@
 
 aside{
 	background-color: $color9;
+	align-self: flex-start;
+	margin-top: -4rem;
 }
 
 
@@ -136,6 +138,7 @@ aside{
 .back{
 	font-size: 2rem;
 	font-family: 'proxima_novabold_italic';
+	margin-bottom: 3.5rem;
 	&__link{
 		color: $color15;
 		padding-left: 37px;

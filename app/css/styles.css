@@ -1064,7 +1064,9 @@ form .form-control {
     letter-spacing: .1em; }
 
 aside {
-  background-color: #13242b; }
+  background-color: #13242b;
+  align-self: flex-start;
+  margin-top: -4rem; }
 
 .pagination {
   font-family: 'proxima_novabold_italic';
@@ -1129,7 +1131,8 @@ aside {
 
 .back {
   font-size: 2rem;
-  font-family: 'proxima_novabold_italic'; }
+  font-family: 'proxima_novabold_italic';
+  margin-bottom: 3.5rem; }
   .back__link {
     color: #5c6d72;
     padding-left: 37px;
@@ -1206,15 +1209,17 @@ aside {
 /* =more list
 ---------------------------*/
 .inner .more-list {
-  padding: 4.5rem 8rem; }
+  padding: 4rem 8rem 2rem; }
   .inner .more-list h1 {
     font-size: 4rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 3.5rem; }
 
 .inner .content main {
   color: #c7dce3;
   font-size: 1.7rem;
-  line-height: 2; }
+  line-height: 2;
+  letter-spacing: .1em; }
   .inner .content main h1, .inner .content main h2, .inner .content main h3, .inner .content main h4, .inner .content main h5, .inner .content main h6 {
     color: #fff;
     font-weight: normal;
@@ -1223,7 +1228,8 @@ aside {
     letter-spacing: .1em; }
   .inner .content main h1 {
     font-size: 4rem;
-    line-height: 1.2; }
+    line-height: 1.2;
+    margin-bottom: 2rem; }
   .inner .content main h2 {
     font-family: 'proxima_novablack_italic';
     font-size: 3.5rem;
@@ -1245,19 +1251,22 @@ aside {
   .inner .content main h4 + p,
   .inner .content main h5 + p {
     margin-top: .5rem; }
+  .inner .content main p > strong {
+    font-size: inherit;
+    color: inherit; }
   .inner .content main strong {
     font-weight: 500; }
   .inner .content main a {
     color: #00dbce; }
   .inner .content main p {
-    margin: 3rem 0; }
+    margin: .3rem 0; }
   .inner .content main img {
     max-width: 100%; }
   .inner .content main img.justifyleft, .inner .content main table.justifyleft {
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
-    margin-top: 20px; }
+    margin-top: 10px; }
   .inner .content main img.justifyright, .inner .content main table.justifyright {
     float: right;
     margin-left: 10px;
@@ -1344,7 +1353,7 @@ aside {
     line-height: 1.3;
     margin: 3rem 0 5rem; }
     .inner .content main table tr th, .inner .content main table tr td {
-      padding: 1.8rem 1.5rem 1.8rem 2.8rem;
+      padding: 1.8rem .2rem 1.8rem 2.8rem;
       text-align: left; }
     .inner .content main table tr th {
       background: #13242b;
@@ -1353,11 +1362,13 @@ aside {
       font-size: 1.7rem;
       font-weight: 500; }
     .inner .content main table tr td {
-      border-bottom: 1px solid #1c2d33; }
+      border-bottom: 1px solid #1c2d33;
+      padding-top: 3rem;
+      padding-bottom: 3rem; }
 
 .more__item {
   margin-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid #36454b; }
   .more__item:last-child {
     border-bottom: none; }
