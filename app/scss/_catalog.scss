@@ -1,0 +1,129 @@
+.categories{
+	overflow: hidden;
+	// margin-top: 0;
+	padding-top: 0 !important;
+	.d-flex{
+		height: 100%;
+	}
+}
+
+.category{
+	&__item{
+		// transition: .3s;
+		position: relative;
+		&:hover{
+			.category{
+				&__link{
+					width: 150%;
+					z-index: 10;
+				}
+			}
+			// flex-grow: 1.5
+		}
+	}
+
+	&__link{
+
+    transform: translateX(-50%);
+    transform-style: preserve-3d;
+    perspective: 500px;
+    will-change: width;
+    width: 100%;		
+
+
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		display: flex;
+		color: #fff;
+		text-decoration: none;
+		height: 100%;
+		letter-spacing: 0.1em;
+		transition: .3s;
+		position: absolute;
+		&:hover{
+			background-size: 120%;
+			.category{
+				&__inner{
+					background-color: rgba(3,21,27,.2);
+				}
+				&__title{
+					color: $color7;
+					&:after{
+						
+						width: 126px;
+						margin-left: -63px;
+					}
+				}
+				&__num{
+					span:after{
+						right: -40px;
+						width: 80px;
+					}
+				}
+			}
+		}
+	}
+	&__inner{
+		transition: .3s background-color;
+		background-color: rgba(3,21,27,.6);
+		display: flex;
+		flex-direction: column;
+		padding-left: 5rem;
+		padding-right: 5rem;
+		padding-top: 6rem;
+	}
+	&__num{
+		font-size: 4rem;
+		color: $color5;
+		span{
+			padding-right: 60px;
+			position: relative;
+			&:after{
+				transition: .3s;
+				@extend .before;
+				border-top: 1px solid $color11;
+				top: 20px;
+				right: 0;
+				width: 40px;
+			}
+		}
+	}
+
+	&__title{
+		font-family: 'proxima_novablack_italic';
+		font-size: 3rem;
+		line-height: 1.5;
+		padding-bottom: 1.5rem;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		min-height: 105px;
+		@extend .flex-center;
+		min-height: 105px;
+		&:after{
+			@extend .before;
+			border-top: 1px solid $color11;
+			bottom: 0;
+			left: 50%;
+			margin-left: -46px;
+			transition: .3s;
+			width: 95px;
+		}
+	}
+
+	&__desc{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding-bottom: 10rem;
+	}
+
+	&__text{
+		font-size: 1.7rem;
+		line-height: 1.8;
+		margin-top: 2.5rem;
+		text-align: center;
+	}
+}
