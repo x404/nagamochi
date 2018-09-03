@@ -11,7 +11,7 @@
 
 <meta name="robots" content="noindex,nofollow" />
 
-<title>Главная</title>
+<title>Homepage</title>
 <link rel="stylesheet" href="/css/styles.min.css" />
 <script src="/js/libs.min.js"></script>
 
@@ -259,5 +259,39 @@
 <script src="/js/engine.js"></script>
 
 <link rel="stylesheet" property="stylesheet" href="/css/selectize.css" /> 
+<script>
+$(document).ready(function(){	
+	$('body').parallax({
+		'elements': [
+			{
+				'selector': 'div.grid',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': -10,
+						'multiplier': 0.008,
+						'invert': false,
+						'unit': 'px'
+						}
+					}
+				}
+			},
+			{
+				'selector': 'div.main-pic',
+				'properties': {
+					'x': {
+						'background-position-x': {
+						'initial': 0,
+						'multiplier': 0.03,
+						'invert': true,
+						'unit': 'px'
+						}
+					}
+				}
+			}
+		]
+	});
+});
+</script>
 </body>
 </html>

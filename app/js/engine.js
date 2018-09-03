@@ -70,38 +70,6 @@ $(document).ready(function(){
 		}, false);
 	}
 
-	$('body').parallax({
-		'elements': [
-			{
-				'selector': 'div.grid',
-				'properties': {
-					'x': {
-						'background-position-x': {
-						'initial': -10,
-						'multiplier': 0.008,
-						'invert': false,
-						'unit': 'px'
-						}
-					}
-				}
-			},
-			{
-				'selector': 'div.main-pic',
-				'properties': {
-					'x': {
-						'background-position-x': {
-						'initial': 0,
-						'multiplier': 0.03,
-						'invert': true,
-						'unit': 'px'
-						}
-					}
-				}
-			}
-		]
-	});
-
-
 	// scroll
 	var nice = $('.selectize-dropdown-content').niceScroll(); 
 });
