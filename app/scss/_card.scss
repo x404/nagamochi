@@ -1,0 +1,116 @@
+.main-card{
+	.bg{
+		background: url(../images/card-bg.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	main{
+		padding-top: 7rem;
+	}
+
+	.top{
+		padding-top: 1rem;
+		h3{
+			font-family: 'proxima' !important;
+			font-size: 2.4rem !important;
+			font-weight: 500;
+		}
+	}
+	
+	.text{
+		font-size: 1.8rem;
+		color: $color3;
+		padding-bottom: 15rem;
+		.row{
+			display: flex;
+			align-items: center;
+			margin-top: 12.5rem;
+			&-pic{
+				&-left{
+					.description{
+						padding-left: 5.5rem;
+					}
+				}
+				&-right{
+					.description{
+						padding-right: 5.5rem;
+					}
+				}
+			}
+		}
+		.title{
+			font-size: 4rem;
+			padding-bottom: 1rem;
+			margin-bottom: 4.5rem;
+			position: relative;
+			text-transform: uppercase;
+			&:after{
+				@extend .before;
+				border-bottom: 1px solid #00b4a9;
+				width: 105px;
+				bottom: 0;
+				left: 0;
+			}
+		}
+
+		.pic{
+			float: left;
+			img{
+				display: block;
+				position: relative;
+				z-index: 2;
+			}
+			$w: 10px;
+			&-shadow{
+				position: relative;
+				&:before,
+				&:after{
+					@extend .before;
+					border-color: #00b4a9;
+				}
+				&:before{
+					height: 100%;
+				}
+
+				&-right{
+					&:before{
+						border-right-style: solid;
+						border-right-width: $w;
+						right: -$w;
+						top: $w;
+					}
+					&:after{
+						border-bottom-style: solid;
+						border-bottom-width: $w;
+						bottom: -$w;
+						left: $w;
+						height: $w;
+						width: 100%;
+					}
+				}
+
+				&-left{
+					&:before{
+						border-left-style: solid;
+						border-left-width: $w;
+						left: -$w;
+						top: $w;
+					}
+					&:after{
+						border-bottom-style: solid;
+						border-bottom-width: $w;
+						bottom: -$w;
+						left: -$w;
+						height: $w;
+						width: 100%;
+					}
+				}				
+			}
+		}
+
+
+		.description{
+			line-height: 1.9;
+		}
+	}
+}

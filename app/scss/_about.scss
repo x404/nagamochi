@@ -1,11 +1,16 @@
-.main-about{
+.main-about,
+.main-card{
 	padding-top: 0 !important;
+	background-size: cover;
+	.neck{
+		height: 190px;
+	}
+}
+
+.main-about{
 	.bg{
 		background:#040702 url(../images/about-bg.jpg) no-repeat center top;
-		background-size: cover;
-		.d-flex{
-			height: 190px;			
-		}
+
 	}
 
 	.text{
@@ -168,9 +173,11 @@
 
 
 .principles{
-	background: #13242b;
 	margin-top: 9rem;
-	padding: 9rem 0;
+	.container{
+		background: #13242b;		
+		padding: 9rem 0;
+	}
 }
 
 .principle{
@@ -213,7 +220,7 @@
 	&__signature{
 		font-size: 1.6rem;
 		color: $color2;
-		margin-top: 5rem;
+		// margin-top: 5rem;
 		.color1{
 			.circle{
 				background-color: $color1;

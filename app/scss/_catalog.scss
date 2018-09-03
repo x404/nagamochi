@@ -39,9 +39,9 @@
 			width: 120%;
 			.category{
 				&__inner{
-					background-color: rgba(3,21,27,.2);
-					// background-size: 130%;
-					// width: 110%;
+					&:after{
+						background-color: rgba(3,21,27,.2);						
+					}
 				}
 				&__title{
 					color: $color7;
@@ -64,13 +64,30 @@
 		background-repeat: no-repeat;
 		background-size: 100%;
 		transition: .3s;
-		background-color: rgba(3,21,27,.6);
 		display: flex;
 		padding-left: 5rem;
 		padding-right: 5rem;
 		padding-top: 6rem;
 		width: 100%;
+
+		position: relative;
+		&:after{
+			@extend .before;
+			background-color: rgba(3,21,27,.6);
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			transition: background-color .3s;
+		}
 	}
+
+	&__column{
+		position: relative;
+		z-index: 2;
+
+	}
+
 	&__num{
 		font-size: 4rem;
 		color: $color5;

@@ -51,14 +51,6 @@ html, body{
 }
 
 
-// .grid.inner
-.grid
-{
-	transition: .3s transform ease-out;
-	transform-origin: 0 50%;
-}
-
-
 // .m-modal-open .grid.inner, 
 .m-modal-open .grid, 
 .m-modal-open .outerwrapper {
@@ -76,12 +68,20 @@ html, body{
 
 
 .grid{
+	transition: .3s transform ease-out;
+	transform-origin: 0 50%;
 	display: grid;
 	grid-template-areas: "header"
 						 "main"
 						 "footer";
 	grid-template-rows: auto 1fr auto;	
 	min-height: 100vh;
+
+	&.inner{
+		footer{
+			background-color: $color1;
+		}
+	}
 }
 
 // .grid.inner{
