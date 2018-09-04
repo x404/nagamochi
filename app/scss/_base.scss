@@ -358,6 +358,7 @@ em strong
 .lang{
 	font-size: 1.5rem;
 	letter-spacing: 0.1em;
+	width: 90px;
 	.current{
 		color: $color2;
 		text-decoration: none;
@@ -366,6 +367,7 @@ em strong
 	a{
 		color: $color6;
 		text-decoration: none;
+		margin: 1rem 0;
 		&:hover{
 			color: $color5;
 		}

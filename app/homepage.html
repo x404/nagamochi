@@ -36,7 +36,7 @@
 		<header class="header">
 	    	<div class="container">
 	    		<div class="header__inner d-flex align-items-center">
-			    	<div class="col-8 d-flex align-items-center">
+			    	<div class="col-4 col-lg-7 col-sm-6 d-flex align-items-center">
 				    	<div class="logo">
 				    		<a href="/"><img src="images/logo.png" alt="SB NAGAMOCHI" /></a>
 				    	</div>
@@ -54,10 +54,10 @@
 						</nav>
 						<!-- =/nav -->
 			    	</div>
-			    	<div class="col-1">
+			    	<div class="col-4 col-lg-2 col-sm-3">
 						<button type="button" class="btn btn-blue btn-callback" data-toggle="sidemodal" data-target="#modal-callback">Call back</button>    		
 			    	</div>
-			    	<div class="col-1 d-flex justify-content-end">
+			    	<div class="col-1 col-lg-1 col-sm-1 d-flex justify-content-end">
 						<button type="button" class="extra-toggle" data-popup="modal-menu" aria-label="Show / hide menu">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -73,40 +73,52 @@
 			<div class="content d-flex align-items-center">
 				<div class="intro">
 					<h1 class="visually-hidden">Brake & Clutch Parts</h1>
-					<img src="images/pic.png" alt="" />
+					<picture>
+						<source srcset="images/pic320.png" media="(max-width: 460px)">
+						<img srcset="images/pic.png" alt="" />						
+					</picture>
 					<p>The fastest must be <strong>brakes</strong>.</p>
 					<a href="#" class="btn btn-blue btn-learn-more">Learn more</a>
 				</div>
-				<div class="main-pic">
-					<!-- <img src="images/disc.png" alt="" /> -->
-				</div>
+				<div class="main-pic"></div>
 				<div class="right" >
-					<div class="new-title"><img src="images/news.png" alt="News" /></div>
-					<div class="prevnext"></div>
-					<div class="" id="news-carousel">
-						<div>
-							<div class="news-slide">
-								<a href="#">
-									<img src="tmp/new-1.jpg" alt="" />
-									<h3>AUTOMECHANIKA DUBAI 2018</h3>
-									<p>JNBK Corp. presents its 3 brands including SB Nagamochi</p>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="news-slide">
-								<a href="#">
-									<img src="tmp/new-2.jpg" alt="" />
-									<h3>MOTOR SHOW 2013, YANGON MYANMAR, 15-18 MARCH 2013AUTOMECHANIKA DUBAI 2018</h3>
-									<p>JNBK Corp. presents its 3 brands including SB Nagamochi</p>							
-								</a>
-							</div>
-						</div>
-					</div>
-
 					<div class="counter">
 						<div class="cifr"><span data-number="5643">5643</span></div>
 						<p>SB Nagamochi produces</p>
+					</div>
+
+
+					<div class="news__container">
+						<div class="news">
+							<div class="new-title"><img src="images/news.png" alt="News" /></div>
+							<div class="prevnext"></div>
+						</div>
+
+						<div id="news-carousel">
+							<div>
+								<div class="news-slide">
+									<a href="#">
+										<img src="tmp/new-1.jpg" alt="" />
+										<div class="news__desc">
+											<h3>AUTOMECHANIKA DUBAI 2018</h3>
+											<p>JNBK Corp. presents its 3 brands including SB Nagamochi</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div>
+								<div class="news-slide">
+									<a href="#">
+										<img src="tmp/new-2.jpg" alt="" />
+										<div class="news__desc">
+											<h3>MOTOR SHOW 2013, YANGON MYANMAR, 15-18 MARCH 2013AUTOMECHANIKA DUBAI 2018</h3>
+											<p>JNBK Corp. presents its 3 brands including SB Nagamochi</p>
+											
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

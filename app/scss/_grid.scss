@@ -59,6 +59,23 @@
 	}
 }
 
+@media (min-width: 576px) {
+	@for $i from 10  through 1 {
+		$step : 10;
+		.col-sm-#{$i}{width: $step*$i + %;}
+		.col-sm-offset-#{$i}{margin-left: $step*$i + %;}
+	}
+}
+
+@media (min-width: 768px) {
+	@for $i from 10  through 1 {
+		$step : 10;
+		.col-sm-#{$i}{width: $step*$i + %;}
+		.col-sm-offset-#{$i}{margin-left: $step*$i + %;}
+	}
+}
+
+
 @media (min-width: 768px) {
 	.container{
 		width: 730px;
@@ -69,6 +86,13 @@
 	.container {
 		width: 940px;
 	}
+
+	@for $i from 10  through 1 {
+		$step : 10;
+		.col-lg-#{$i}{width: $step*$i + %;}
+		.col-lg-offset-#{$i}{margin-left: $step*$i + %;}
+	}
+
 }
 
 @media (min-width: 1150px) {
@@ -81,6 +105,29 @@
 @media (min-width: 1199px) {
 	.container {
 		width: 1100px;
+	}
+	@for $i from 10  through 1 {
+		$step : 10;
+		.col-xl-#{$i}{width: $step*$i + %;}
+		.col-xl-offset-#{$i}{margin-left: $step*$i + %;}
+	}	
+}
+
+@media (min-width: 1300px) {
+	.container{
+		width: 1280px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.container{
+		width: 1450px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.container{
+		width: 1480px;
 	}
 }
 
