@@ -57,10 +57,34 @@
 	}
 }
 
-@media (max-width: 545px){
+@media (max-width: 590px){
+	.sidemodal{
+		width: 90%;
+		.inner{
+			width: 100%;
+			padding-right: 3rem;
+			margin-left: 0;
+			padding-left: 3.7rem;
+		}
+		.close-modal{
+			right: 20px;
+		}
+	}
 }
 
 @media (max-width: 420px){
+	.sidemodal{
+		.inner{
+			padding-left: 2rem;
+			padding-right: 2rem;
+			padding-top: 8rem;
+		}
+		.text{
+			padding-right: 0;
+			font-size: 1.4rem;
+		}
+	}
+
 	.footer{
 		font-size: 1.3rem;
 	}
@@ -71,6 +95,15 @@
 
 
 @media (max-width: 380px){
+	.sidemodal{
+		.close-modal{
+			top: 20px;
+		}
+		.title{
+			font-size: 3rem;
+		}
+	}
+
 	.header__inner{
 		justify-content: space-between;
 		& > div{
