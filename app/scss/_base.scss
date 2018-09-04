@@ -547,14 +547,11 @@ form{
 }
 
 
-.close-modal{
+.close-modal,
+.close-menu{
 	cursor: pointer;
-	background: none;
+	background: none !important;
 	border: none;
-	position: absolute;
-	right: 0px;
-	top: 60px;
-	z-index: 99;
 	svg{
 		@include transition-param(transform)
 	}
@@ -566,7 +563,15 @@ form{
 		svg{
 			@include rotation(90deg)
 		}
-	}
+	}	
+}
+
+
+.close-modal{
+	position: absolute;
+	right: 0px;
+	top: 60px;
+	z-index: 99;
 }
 
 

@@ -356,6 +356,18 @@ $color_2: #0563bf;
 		}
 	}
 
+	.close-menu{
+		display: block;
+		position: absolute;
+		transform: none;
+		width: 22px;
+		height: 22px;
+		right: 20px;
+		left: auto;
+		top: 25px;
+		z-index: 999;
+	}
+
 	&.open{
 		$r: 0;
 		right: $r;

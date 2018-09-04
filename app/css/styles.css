@@ -1074,24 +1074,30 @@ form .captcha {
     padding-top: 2.2rem;
     padding-right: 2rem; }
 
-.close-modal {
+.close-modal,
+.close-menu {
   cursor: pointer;
-  background: none;
-  border: none;
+  background: none !important;
+  border: none; }
+  .close-modal svg,
+  .close-menu svg {
+    -webkit-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out; }
+  .close-modal line,
+  .close-menu line {
+    stroke: white;
+    stroke-width: 3; }
+  .close-modal:hover svg,
+  .close-menu:hover svg {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.close-modal {
   position: absolute;
   right: 0px;
   top: 60px;
   z-index: 99; }
-  .close-modal svg {
-    -webkit-transition: transform 0.2s ease-out;
-    transition: transform 0.2s ease-out; }
-  .close-modal line {
-    stroke: white;
-    stroke-width: 3; }
-  .close-modal:hover svg {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
 
 .modal-menu {
   background: rgba(0, 180, 169, 0.95);
@@ -1983,6 +1989,16 @@ aside {
     padding: 7.3rem 1.5rem 0 !important; }
     .apanel .page-asubnav.open {
       transform: translateX(0); }
+  .apanel .close-menu {
+    display: block;
+    position: absolute;
+    transform: none;
+    width: 22px;
+    height: 22px;
+    right: 20px;
+    left: auto;
+    top: 25px;
+    z-index: 999; }
   .apanel.open {
     right: 0;
     z-index: 500; }
@@ -3006,6 +3022,16 @@ aside {
     padding: 7.3rem 1.5rem 0 !important; }
     .apanel .page-asubnav.open {
       transform: translateX(0); }
+  .apanel .close-menu {
+    display: block;
+    position: absolute;
+    transform: none;
+    width: 22px;
+    height: 22px;
+    right: 20px;
+    left: auto;
+    top: 25px;
+    z-index: 999; }
   .apanel.open {
     right: 0;
     z-index: 500; }
