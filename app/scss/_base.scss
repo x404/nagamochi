@@ -346,6 +346,9 @@ em strong
 	&__inner{
 		height: 10rem;		
 	}
+	.lang{
+		width: 90px;
+	}
 }
 
 .copyright{
@@ -358,7 +361,6 @@ em strong
 .lang{
 	font-size: 1.5rem;
 	letter-spacing: 0.1em;
-	width: 90px;
 	.current{
 		color: $color2;
 		text-decoration: none;

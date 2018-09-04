@@ -1,6 +1,28 @@
+@media (max-width: 1600px){
+	.angle{
+		width: 520px;
+	}
+}
+
+@media (max-width: 1500px){
+	.modal-menu .container{
+		padding-right: 5rem;
+	}
+}
+
+
 @media (max-width: 1420px){
 	.grid{
 		display: block;
+	}
+}
+
+@media (max-width: 1299px){
+	.mainnav li{
+		margin-right: 2rem;
+	}
+	.btn-callback{
+		margin-left: 5rem;
 	}
 }
 
@@ -8,18 +30,35 @@
 	.mainnav{
 		font-size: 1.2rem;
 		li{
-			margin-right: 2.5rem;
+			margin-right: 2.1rem;
 		}
 	}
 
+	.modal-menu .contacts{
+		display: none;
+	}
+
+	.angle{
+		width: 335px;
+	}	
 }
 
 @media (max-width: 1024px){
+	.angle{
+		width: 280px;
+	}
 }
 
 @media (max-width: 991px){
 	#navbar{
 		display: none;
+	}
+
+	.modal-menu .menu{
+		.col{
+			flex-basis: 50%;
+			width: 50%;
+		}
 	}
 }
 
@@ -36,6 +75,10 @@
 			width: 11.5rem;
 		}
 	}
+
+	.modal-menu .menu{
+		padding-left: 1.5rem;
+	}
 }
 
 
@@ -50,12 +93,19 @@
 		// padding-right: 1.5rem;
 	}
 
-	.lang{
+	footer .lang{
 		a{
 			display: inline-block;
 		}
 	}
 }
+
+@media (max-width: 650px){
+	.modal-menu {
+	    display: none!important;
+	}
+}
+
 
 @media (max-width: 590px){
 	.sidemodal{
@@ -69,6 +119,12 @@
 		.close-modal{
 			right: 20px;
 		}
+	}
+}
+
+@media (max-width: 480px){
+	.angle{
+		width: 190px;
 	}
 }
 
@@ -87,9 +143,9 @@
 
 	.footer{
 		font-size: 1.3rem;
-	}
-	.lang{
-		font-size: 1.4rem;
+		.lang{
+			font-size: 1.4rem;
+		}
 	}
 }
 
@@ -122,5 +178,8 @@
 		.btn-callback{
 			width: 10rem;
 		}
+	}
+	.angle{
+		width: 110px;
 	}
 }
