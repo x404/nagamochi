@@ -3,9 +3,6 @@ html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;
 // header, section, footer, aside, nav, article {display:block}
 // ul{list-style:none}
 
-
-
-
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -39,9 +36,6 @@ body{
 html, body{
 	height: 100%
 }
-
-
-
 
 
 @media (min-width: 1280px){
@@ -345,13 +339,13 @@ em strong
 		position: relative;
 		transition: .3s color;
 		&:after{
-			bottom: -5px;
-			transition: .3s;
 			@extend .before;
 			background: $color7;
+			bottom: -5px;
 			height: 2px;
-			width: 0;
 			right: 0;
+			transition: .3s;
+			width: 0;
 		}
 		&:hover{
 			color: $color7;
@@ -573,8 +567,6 @@ form{
 		padding-top: 2.2rem;
 		padding-right: 2rem;
 	}
-
-
 }
 
 
