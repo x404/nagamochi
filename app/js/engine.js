@@ -102,7 +102,7 @@ $(document).ready(function(){
   
 
 
-// обратный звонок
+// callback
 document.querySelector('[data-toggle="sidemodal"]').addEventListener('click', function(e){
 	e.stopPropagation();
 	let target = this.dataset.target,
@@ -110,7 +110,6 @@ document.querySelector('[data-toggle="sidemodal"]').addEventListener('click', fu
 	document.querySelector(target).classList.add('open');
 	document.querySelector('.body').classList.add('m-modal-open');
 }, false);
-
 
  
 
@@ -136,14 +135,19 @@ document.querySelector('.asubnav .back_btn').addEventListener("click", function(
 }, false);
 
 
-$(document).on('click', '.apanel .folder span', function(e){
-// document.querySelector('.apanel .folder span').addEventListener("click", function(){
-	e.preventDefault();
-	let $this = $(this),
-		menuItem = $this.data('name');
+var apanelfolder = document.querySelectorAll('.apanel .folder span');
+for (var i = 0; i < apanelfolder.length;i++)
+{
+	var self = apanelfolder[i];
+	self.addEventListener("click", function(e){
+		e.preventDefault();
+		let $this = $(this),
+			menuItem = $this.data('name');
 
-	document.querySelector('.page-asubnav').classList.add('open');
+		document.querySelector('.page-asubnav').classList.add('open');
 
-	$('.apanel .subnav_content-active').removeClass('subnav_content-active');
-	$('.apanel .subnav_content-' + menuItem).addClass('subnav_content-active');
-});
+		$('.apanel .subnav_content-active').removeClass('subnav_content-active');
+		$('.apanel .subnav_content-' + menuItem).addClass('subnav_content-active');
+	});
+}
+// =/mobile menu
