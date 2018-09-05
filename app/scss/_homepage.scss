@@ -19,7 +19,7 @@
 .webp{
 	.homepage{
 		.main-pic{
-			background: url(../images/disc.webp) no-repeat;
+			background-image: url(../images/disc.webp);
 		}
 	}
 	.grid{
@@ -30,7 +30,7 @@
 .no-webp{
 	.homepage{
 		.main-pic{
-			background: url(../images/disc.png) no-repeat;
+			background-image: url(../images/disc.png);
 		}
 	}
 	.grid{
@@ -86,6 +86,7 @@
 	}
 
 	.main-pic{
+		background-repeat: no-repeat;
 		flex-grow: 1;
 		margin-left: -4rem;
 		width: 715px;

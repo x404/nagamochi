@@ -1,23 +1,24 @@
 @media (max-width: 1800px){
-	.webp{
-		.homepage{
-			.main-pic{
-				background: url(../images/disc1600.webp) no-repeat;
-			}
-		}
-	}
+	// .webp{
+	// 	.homepage{
+	// 		.main-pic{
+	// 			background: url(../images/disc1600.webp) no-repeat;
+	// 		}
+	// 	}
+	// }
 
-	.no-webp{
-		.homepage{
-			.main-pic{
-				background: url(../images/disc1600.png) no-repeat;
-			}
-		}
-	}
+	// .no-webp{
+	// 	.homepage{
+	// 		.main-pic{
+	// 			background: url(../images/disc1600.png) no-repeat;
+	// 		}
+	// 	}
+	// }
 
 
 	.homepage{
 		.main-pic{
+			background-size: contain;
 			height: 605px;
 			width: 620px;
 		}

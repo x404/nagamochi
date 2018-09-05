@@ -1635,13 +1635,13 @@ aside {
     z-index: 1; }
 
 .webp .homepage .main-pic {
-  background: url(../images/disc.webp) no-repeat; }
+  background-image: url(../images/disc.webp); }
 
 .webp .grid {
   background: #031821 url(../images/bg.webp) no-repeat; }
 
 .no-webp .homepage .main-pic {
-  background: url(../images/disc.png) no-repeat; }
+  background-image: url(../images/disc.png); }
 
 .no-webp .grid {
   background: #031821 url(../images/bg.jpg) no-repeat; }
@@ -1681,6 +1681,7 @@ aside {
     position: relative;
     z-index: 99; }
   .homepage .main-pic {
+    background-repeat: no-repeat;
     flex-grow: 1;
     margin-left: -4rem;
     width: 715px;
@@ -3338,11 +3339,8 @@ aside {
     display: none !important; } }
 
 @media (max-width: 1800px) {
-  .webp .homepage .main-pic {
-    background: url(../images/disc1600.webp) no-repeat; }
-  .no-webp .homepage .main-pic {
-    background: url(../images/disc1600.png) no-repeat; }
   .homepage .main-pic {
+    background-size: contain;
     height: 605px;
     width: 620px; }
   .homepage .intro {
