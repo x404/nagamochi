@@ -70,12 +70,6 @@ html, body{
 .grid{
 	transition: .3s transform ease-out;
 	transform-origin: 0 50%;
-	display: grid;
-	grid-template-areas: "header"
-						 "main"
-						 "footer";
-	grid-template-rows: auto 1fr auto;	
-	min-height: 100vh;
 
 	&.inner{
 		footer{
@@ -83,6 +77,37 @@ html, body{
 		}
 	}
 }
+
+
+
+body{
+	display: flex;
+	 flex-flow: column;
+}
+.homepage{
+	flex-grow: 1;
+}
+.grid{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.main{
+		flex-grow: 1;
+	}		
+}
+
+@supports (display:grid) {
+	.grid{
+		height: auto;
+		min-height: 100vh;
+		display: grid;
+		grid-template-areas: "header"
+							 "main"
+							 "footer";
+		grid-template-rows: auto 1fr auto;			
+	}
+}
+
 
 // .grid.inner{
 // 	display: grid;
@@ -99,6 +124,11 @@ html, body{
 }
 
 
+
+.selectize-input input{
+	@include placeholder(#fff);
+	font-weight: 100;
+}
 
 input::-moz-focus-inner{
 	border: 0;
@@ -704,6 +734,7 @@ form{
 		border-color: $color2;
 		color: $color2;
 		margin-top: .8rem;
+		text-align: center;
 	}
 
 	.address{
