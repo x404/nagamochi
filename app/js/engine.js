@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	// homepage news carousel
 	$('#news-carousel').slick({
 		dots: false,
 		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
@@ -35,9 +36,15 @@ $(document).ready(function(){
 			{
 		      breakpoint: 768,
 		      settings: {
+		        centerPadding: "0px"
+		      }
+		    },
+			{
+		      breakpoint: 740,
+		      settings: {
 		        centerPadding: "10px"
 		      }
-		    }
+		    }		    
 	    ]
 	});
 
@@ -66,7 +73,7 @@ $(document).ready(function(){
 
 	$('select').selectize();
 
-		/* Time Parser */
+	/* Time Parser */
 	var inter = 1;
 	$('.cifr span').each(function() {
 	  $(this).attr('data-number', parseInt($(this).text()));

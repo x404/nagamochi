@@ -13,6 +13,14 @@ _::-webkit-:host:not(:root:root), .header{
 }
 
 
+/*Edge*/
+/*
+@supports ( -ms-accelerator:true ) 
+{
+}
+*/
+
+
 //ie11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 }
