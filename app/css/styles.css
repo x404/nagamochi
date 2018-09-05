@@ -1070,6 +1070,8 @@ form .textarea {
 
 form .captcha {
   margin-top: 3.2rem; }
+  form .captcha img {
+    max-width: 100%; }
 
 .sidemodal {
   background: #13242b;
@@ -1632,10 +1634,20 @@ aside {
     border-left: 600px solid transparent;
     z-index: 1; }
 
+.webp .homepage .main-pic {
+  background: url(../images/disc.webp) no-repeat; }
+
+.webp .grid {
+  background: #031821 url(../images/bg.webp) no-repeat; }
+
+.no-webp .homepage .main-pic {
+  background: url(../images/disc.png) no-repeat; }
+
+.no-webp .grid {
+  background: #031821 url(../images/bg.jpg) no-repeat; }
+
 .homepage {
   position: relative; }
-  .homepage .grid {
-    background: #031821 url(../images/bg.jpg) no-repeat; }
   .homepage .intro {
     margin-left: calc((100% - 1600px)/2);
     padding-left: 9.5rem;
@@ -1669,7 +1681,6 @@ aside {
     position: relative;
     z-index: 99; }
   .homepage .main-pic {
-    background: url(../images/disc.png) no-repeat;
     flex-grow: 1;
     margin-left: -4rem;
     width: 715px;
@@ -3277,9 +3288,10 @@ aside {
     .sidemodal .close-modal {
       right: 20px; }
   .header .btn-callback {
-    width: auto;
+    display: block;
     padding-left: 3rem;
-    padding-right: 3rem; } }
+    padding-right: 3rem;
+    width: 100%; } }
 
 @media (max-width: 480px) {
   .angle {
@@ -3326,12 +3338,22 @@ aside {
     display: none !important; } }
 
 @media (max-width: 1800px) {
+  .webp .homepage .main-pic {
+    background: url(../images/disc1600.webp) no-repeat; }
+  .no-webp .homepage .main-pic {
+    background: url(../images/disc1600.png) no-repeat; }
   .homepage .main-pic {
-    background-image: url(../images/disc1600.png);
     height: 605px;
     width: 620px; }
   .homepage .intro {
-    margin-left: calc((100% - 1480px)/ 2); } }
+    margin-left: calc((100% - 1480px)/ 2); }
+  .new__item {
+    margin-right: 8rem;
+    width: calc(33% - 8rem); }
+  .new__thumb img {
+    max-width: 100%; }
+  .new__title {
+    font-size: 1.8rem; } }
 
 @media (max-width: 1700px) {
   .homepage .main-pic {
@@ -3342,8 +3364,11 @@ aside {
       left: -40px; } }
 
 @media (max-width: 1550px) {
+  .webp .homepage .main-pic {
+    background-image: url(../images/disc1200.webp); }
+  .no-webp .homepage .main-pic {
+    background-image: url(../images/disc1200.png); }
   .homepage .main-pic {
-    background-image: url(../images/disc1200.png);
     height: 465px;
     margin-left: -3rem;
     width: 415px; }
@@ -3422,7 +3447,12 @@ aside {
   .homepage .intro:before {
     left: 13%; }
   .homepage .intro:after {
-    bottom: -5px; } }
+    bottom: -5px; }
+  .new__item {
+    margin-right: 6rem;
+    width: calc(33% - 6rem); }
+  .new__title {
+    font-size: 1.6rem; } }
 
 @media (max-width: 1199px) {
   .homepage .intro {
@@ -3432,13 +3462,30 @@ aside {
     .homepage .intro:after {
       bottom: -5px; }
   .homepage .counter:before {
-    right: 50px; } }
+    right: 50px; }
+  .new__item {
+    margin-right: 6rem;
+    width: calc(50% - 6rem); }
+  .new__title {
+    font-size: 1.6rem; } }
 
 @media (max-width: 1150px) {
   .news__container {
     width: 700px; }
   #news-carousel {
-    width: 100%; } }
+    width: 100%; }
+  .pagination {
+    font-size: 1.4rem;
+    margin: 5rem 0 3rem -5%;
+    width: calc(100% - 12px); }
+    .pagination a:not([class]),
+    .pagination span:not(.separator) {
+      color: #fff;
+      height: 3.8rem;
+      width: 3.8rem; }
+    .pagination .prev:before,
+    .pagination .next:before {
+      top: 1px; } }
 
 @media (max-width: 1024px) {
   .homepage .intro {
@@ -3451,8 +3498,10 @@ aside {
     margin-left: -125px; } }
 
 @media (max-width: 991px) {
-  .homepage .intro p {
-    font-size: 2rem; }
+  .webp .homepage .main-pic {
+    background-image: url(../images/disc768.webp); }
+  .no-webp .homepage .main-pic {
+    background-image: url(../images/disc768.png); }
   .btn-learn-more {
     font-size: 1.7rem;
     height: 5rem;
@@ -3462,7 +3511,6 @@ aside {
     .btn-learn-more:before {
       left: 12px; }
   .homepage .main-pic {
-    background-image: url(../images/disc768.png);
     background-position: center center !important; }
   .homepage .intro {
     width: 60%;
@@ -3472,10 +3520,25 @@ aside {
       max-width: 100%; }
     .homepage .intro:before {
       left: 20%; }
+    .homepage .intro p {
+      font-size: 2rem; }
   .homepage .counter {
     font-size: 1.3rem; }
     .homepage .counter .cifr {
       font-size: 5rem; }
+  .homepage .right .new-title {
+    padding-left: 20px;
+    width: 50px; }
+    .homepage .right .new-title img {
+      height: 80px; }
+  .homepage .right .news {
+    height: calc(100% - 40px);
+    left: 0;
+    top: 20px; }
+  .homepage .right .prevnext {
+    left: 22px;
+    bottom: 60px;
+    transform: scale(0.75); }
   .news__container {
     margin-top: 2.5rem;
     width: 550px; }
@@ -3493,19 +3556,18 @@ aside {
     #news-carousel .news-slide h3 {
       height: 4.5rem;
       overflow: hidden; }
-  .homepage .right .new-title {
-    padding-left: 20px;
-    width: 50px; }
-    .homepage .right .new-title img {
-      height: 80px; }
-  .homepage .right .news {
-    height: calc(100% - 40px);
-    left: 0;
-    top: 20px; }
-  .homepage .right .prevnext {
-    left: 22px;
-    bottom: 60px;
-    transform: scale(0.75); } }
+  .secondary-nav {
+    display: none; }
+  .inner .main h1 {
+    font-size: 5rem; }
+  .list-news {
+    justify-content: space-between; }
+  .new__item {
+    margin-right: 0;
+    width: 305px; }
+  .pagination {
+    margin-left: 0;
+    width: 100%; } }
 
 @media (max-width: 850px) {
   .homepage .intro {
@@ -3516,6 +3578,9 @@ aside {
     width: 500px; } }
 
 @media (max-width: 768px) {
+  .homepage .grid {
+    background-image: url(../images/bg768.jpg);
+    background-size: cover; }
   .homepage .intro {
     padding-left: 12%; }
     .homepage .intro:after {
@@ -3529,11 +3594,18 @@ aside {
   .homepage .counter {
     top: 35px; }
   .news__container {
-    width: 450px; } }
+    width: 450px; }
+  .new__item {
+    width: calc(50% - 4rem);
+    margin-left: 2rem;
+    margin-right: 2rem; } }
 
 @media (max-width: 750px) {
+  .webp .homepage .main-pic {
+    background-image: url(../images/disc480.webp); }
+  .no-webp .homepage .main-pic {
+    background-image: url(../images/disc480.png); }
   .homepage .main-pic {
-    background-image: url(../images/disc480.png);
     width: 230px;
     height: 250px; }
   .homepage .intro {
@@ -3625,15 +3697,43 @@ aside {
   .news__container {
     margin-bottom: 3rem; } }
 
+@media (max-width: 550px) {
+  .inner .main {
+    padding-top: 2rem; }
+  .new__item {
+    margin-right: 0;
+    width: calc(100% - 40px);
+    max-width: 344px; }
+  .new__title {
+    font-size: 1.6rem; }
+  .new__item {
+    margin-left: 0;
+    margin-right: 0;
+    width: calc(100% - 2rem); }
+  .pagination .prev,
+  .pagination .next {
+    display: none; } }
+
 @media (max-width: 480px) {
+  .homepage .grid {
+    background-image: url(../images/bg480.jpg);
+    background-position: center top; }
   #news-carousel .news-slide {
     width: 100%; }
   .news__container {
     margin-left: 2rem;
     margin-right: 2rem;
-    width: calc(100% - 4rem); } }
+    width: calc(100% - 4rem); }
+  .inner .main h1 {
+    font-size: 4.2rem; }
+  .new__item {
+    margin-top: 3rem; } }
 
 @media (max-width: 460px) {
+  .webp .homepage .main-pic {
+    background-image: url(../images/disc320.webp); }
+  .no-webp .homepage .main-pic {
+    background-image: url(../images/disc320.png); }
   .homepage .content {
     display: block;
     padding-top: 2rem; }
@@ -3649,12 +3749,11 @@ aside {
       .homepage .intro .btn:after {
         display: none; }
   .homepage .main-pic {
-    background-image: url(../images/disc320.png);
     background-position: center top !important;
-    width: 100%;
+    height: 325px;
     margin-left: 0;
     margin-top: 2.5rem;
-    height: 325px; }
+    width: 100%; }
   #news-carousel .news-slide a {
     flex-direction: column;
     height: auto;
@@ -3679,7 +3778,17 @@ aside {
     padding-right: 0;
     width: 125px; }
     .homepage .counter p:after {
-      top: 0; } }
+      top: 0; }
+  .homepage .grid {
+    background-image: url(../images/bg320.jpg); }
+  .pagination {
+    font-size: 1.3rem;
+    flex-wrap: wrap; }
+    .pagination a:not([class]),
+    .pagination span:not(.separator) {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin-bottom: .5rem; } }
 
 @media (max-width: 330px) {
   .homepage .counter p:after {
