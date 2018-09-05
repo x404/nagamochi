@@ -226,6 +226,91 @@
 </div>
 <!-- =/modal menu -->
  
+  <!-- =apanel -->
+<div class="apanel">
+	<div class="apanel__inner">
+		<!-- =close -->
+		<button type="button" data-dismiss="modal" class="close-menu" aria-label="Закрыть">
+			<svg width="22" height="22">
+				<line x1="0" y1="0" x2="22" y2="22"/>
+				<line x1="22" y1="0" x2="0" y2="22"/>
+			</svg>
+		</button>				
+		<!-- =/close -->
+
+		<!-- =body -->
+		<div class="apanel__body">
+			<div class="page">
+				<div class="lang">
+					Language
+					<span class="current">Eng</span>
+					<a href="#" title="">Jpn</a>
+				</div>
+				<nav>
+					<ul>
+						<li class="folder"><span data-name="company">COMPANY</span></li>
+						<li class="folder"><span data-name="products">PRODUCTS</span></li>
+						<li class="folder"><span data-name="catalog">CATALOGUE</span></li>
+						<li class="folder"><span data-name="know">Did you know?</span></li>
+						<li class="folder"><span data-name="contacts">Contact us</span></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="page page-asubnav">
+				<!-- =subnav -->
+				<div class="asubnav">
+					<div class="back"><a href="#" class="back_btn">Back</a></div>
+					<div class="asubnav_content subnav_content-company">
+						<ul>
+							<li><a href="#" title="">About Us</a></li>
+							<li><a href="#" title="">Materials & Technologies</a></li>
+							<li><a href="#" title="">Certificates & Warranty</a></li>
+							<li><a href="#" title="">News & Exhibitions</a></li>
+						</ul>
+					</div>	
+					<div class="asubnav_content subnav_content-products">
+						<ul>
+							<li><a href="http://google.com">Product 1</a></li>
+							<li><a href="#">Product 2</a></li>
+							<li><a href="#">Product 3</a></li>
+							<li><a href="#">Product 4</a></li>
+						</ul>
+					</div>
+					<div class="asubnav_content subnav_content-catalog">
+						<ul>
+							<li><a href="#" title="">Card 1</a></li>
+							<li><a href="#" title="">Card 2</a></li>
+							<li><a href="#" title="">Card 3</a></li>
+							<li><a href="#" title="">Card 4</a></li>
+							<li><a href="#" title="">Card 5</a></li>
+							<li><a href="#" title="">Card 6</a></li>
+							<li><a href="#" title="">Card 7</a></li>
+						</ul>
+					</div>
+					<div class="asubnav_content subnav_content-know">
+						<ul>
+							<li><a href="#" title="">Project 1</a></li>
+							<li><a href="#" title="">Project 2</a></li>
+							<li><a href="#" title="">Project 3</a></li>
+							<li><a href="#" title="">Project 4</a></li>
+						</ul>
+					</div>
+					<div class="asubnav_content subnav_content-contacts">
+						<ul>
+							<li><a href="#" title="">Contact 1</a></li>
+							<li><a href="#" title="">Contact 2</a></li>
+							<li><a href="#" title="">Contact 3</a></li>
+							<li><a href="#" title="">Contact 4</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- =/subnav -->
+			</div>
+		</div>
+		<!-- =/body -->
+	</div>
+</div>
+<!-- =/apanel -->
 
 <div id="outdated"></div>
 <script src="/js/slick.min.js"></script> 
