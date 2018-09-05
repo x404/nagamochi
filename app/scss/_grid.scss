@@ -70,8 +70,8 @@
 @media (min-width: 768px) {
 	@for $i from 10  through 1 {
 		$step : 10;
-		.col-sm-#{$i}{width: $step*$i + %;}
-		.col-sm-offset-#{$i}{margin-left: $step*$i + %;}
+		.col-md-#{$i}{width: $step*$i + %;}
+		.col-md-offset-#{$i}{margin-left: $step*$i + %;}
 	}
 }
 
@@ -80,8 +80,8 @@
 	.container{
 		width: 730px;
 	}
-
 }
+
 @media (min-width: 992px) {
 	.container {
 		width: 940px;

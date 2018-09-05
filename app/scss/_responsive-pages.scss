@@ -208,7 +208,12 @@
 		&__title{
 			font-size: 1.6rem;
 		}
-	}	
+	}
+
+	.inner .more-list{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 
 
@@ -429,6 +434,47 @@
 		margin-left: 0;
 		width: 100%;
 	}
+
+
+	// new
+	.inner{
+		.content main{
+			font-size: 1.5rem;
+			h1{
+				font-size: 3rem;
+			}
+			p{
+				font-size: 1.5rem;
+			}
+		}
+		.main{
+			padding-top: 4rem;
+		}
+		aside{
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			.more-list{
+				h1{
+					font-size: 4rem;
+					margin-bottom: 2rem;
+				}
+				.list__wrapper{
+					display: flex;
+					justify-content: space-between;
+					.more{
+						&__item{
+							border-bottom: none;
+							margin-top: 0;
+							width: 30%;
+						}
+						&__title{
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 
@@ -483,6 +529,21 @@
 		margin-left: 2rem;
 		margin-right: 2rem;
 	}
+
+	.inner .content main{
+		.table-responsive {
+			margin-bottom: 2rem;
+			display: block;
+			width: 100%;
+			overflow-x: auto;
+			-webkit-overflow-scrolling: touch;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			table{
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
 }
 
 
@@ -637,6 +698,18 @@
 	.news__container{
 		margin-bottom: 3rem;
 	}
+
+
+	// new
+	.inner aside .more-list .list__wrapper{
+		display: block;
+		.more{
+			&__item{
+				margin-top: 2rem;
+				width: 100%;
+			}
+		}
+	}	
 }
 
 
@@ -670,6 +743,43 @@
 		}
 	}
 	// =/pagination	
+
+
+	// new
+	.inner .content main{
+		font-size: 1.4rem;
+		line-height: 1.5;
+		img{
+			float: none !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+			display: block;
+		}
+
+		h1{
+			font-size: 2.5rem;
+		}
+
+		h2{
+			font-size: 2.3rem;
+		}
+
+		h3{
+			font-size: 2.1rem;
+		}
+
+		h4{
+			font-size: 2rem;
+		}
+
+		blockquote{
+			font-size: 1.5rem;
+			margin-right: 0;
+		}
+	}
+
+
+
 }
 
 
@@ -806,6 +916,16 @@
 		}
 	}
 	// =/pagination
+
+	.inner aside .more-list {
+		padding: 1.5rem;
+		h1{
+			font-size: 3rem;
+		}
+		.more__item:last-child{
+			padding-bottom: 0;
+		}
+	}	
 
 }
 

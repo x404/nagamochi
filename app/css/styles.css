@@ -498,45 +498,45 @@ template {
     margin-left: 10%; } }
 
 @media (min-width: 768px) {
-  .col-sm-10 {
+  .col-md-10 {
     width: 100%; }
-  .col-sm-offset-10 {
+  .col-md-offset-10 {
     margin-left: 100%; }
-  .col-sm-9 {
+  .col-md-9 {
     width: 90%; }
-  .col-sm-offset-9 {
+  .col-md-offset-9 {
     margin-left: 90%; }
-  .col-sm-8 {
+  .col-md-8 {
     width: 80%; }
-  .col-sm-offset-8 {
+  .col-md-offset-8 {
     margin-left: 80%; }
-  .col-sm-7 {
+  .col-md-7 {
     width: 70%; }
-  .col-sm-offset-7 {
+  .col-md-offset-7 {
     margin-left: 70%; }
-  .col-sm-6 {
+  .col-md-6 {
     width: 60%; }
-  .col-sm-offset-6 {
+  .col-md-offset-6 {
     margin-left: 60%; }
-  .col-sm-5 {
+  .col-md-5 {
     width: 50%; }
-  .col-sm-offset-5 {
+  .col-md-offset-5 {
     margin-left: 50%; }
-  .col-sm-4 {
+  .col-md-4 {
     width: 40%; }
-  .col-sm-offset-4 {
+  .col-md-offset-4 {
     margin-left: 40%; }
-  .col-sm-3 {
+  .col-md-3 {
     width: 30%; }
-  .col-sm-offset-3 {
+  .col-md-offset-3 {
     margin-left: 30%; }
-  .col-sm-2 {
+  .col-md-2 {
     width: 20%; }
-  .col-sm-offset-2 {
+  .col-md-offset-2 {
     margin-left: 20%; }
-  .col-sm-1 {
+  .col-md-1 {
     width: 10%; }
-  .col-sm-offset-1 {
+  .col-md-offset-1 {
     margin-left: 10%; } }
 
 @media (min-width: 768px) {
@@ -3450,7 +3450,10 @@ aside {
     margin-right: 6rem;
     width: calc(33% - 6rem); }
   .new__title {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .inner .more-list {
+    padding-left: 3rem;
+    padding-right: 3rem; } }
 
 @media (max-width: 1199px) {
   .homepage .intro {
@@ -3565,7 +3568,30 @@ aside {
     width: 305px; }
   .pagination {
     margin-left: 0;
-    width: 100%; } }
+    width: 100%; }
+  .inner .content main {
+    font-size: 1.5rem; }
+    .inner .content main h1 {
+      font-size: 3rem; }
+    .inner .content main p {
+      font-size: 1.5rem; }
+  .inner .main {
+    padding-top: 4rem; }
+  .inner aside {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    .inner aside .more-list h1 {
+      font-size: 4rem;
+      margin-bottom: 2rem; }
+    .inner aside .more-list .list__wrapper {
+      display: flex;
+      justify-content: space-between; }
+      .inner aside .more-list .list__wrapper .more__item {
+        border-bottom: none;
+        margin-top: 0;
+        width: 30%; }
+      .inner aside .more-list .list__wrapper .more__title {
+        font-size: 1.6rem; } }
 
 @media (max-width: 850px) {
   .homepage .intro {
@@ -3596,7 +3622,16 @@ aside {
   .new__item {
     width: calc(50% - 4rem);
     margin-left: 2rem;
-    margin-right: 2rem; } }
+    margin-right: 2rem; }
+  .inner .content main .table-responsive {
+    margin-bottom: 2rem;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+    .inner .content main .table-responsive table {
+      margin-bottom: 2rem; } }
 
 @media (max-width: 750px) {
   .webp .homepage .main-pic {
@@ -3693,7 +3728,12 @@ aside {
       left: 9px;
       top: 38%; }
   .news__container {
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+  .inner aside .more-list .list__wrapper {
+    display: block; }
+    .inner aside .more-list .list__wrapper .more__item {
+      margin-top: 2rem;
+      width: 100%; } }
 
 @media (max-width: 550px) {
   .inner .main {
@@ -3710,7 +3750,26 @@ aside {
     width: calc(100% - 2rem); }
   .pagination .prev,
   .pagination .next {
-    display: none; } }
+    display: none; }
+  .inner .content main {
+    font-size: 1.4rem;
+    line-height: 1.5; }
+    .inner .content main img {
+      float: none !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      display: block; }
+    .inner .content main h1 {
+      font-size: 2.5rem; }
+    .inner .content main h2 {
+      font-size: 2.3rem; }
+    .inner .content main h3 {
+      font-size: 2.1rem; }
+    .inner .content main h4 {
+      font-size: 2rem; }
+    .inner .content main blockquote {
+      font-size: 1.5rem;
+      margin-right: 0; } }
 
 @media (max-width: 480px) {
   .homepage .grid {
@@ -3786,7 +3845,13 @@ aside {
     .pagination span:not(.separator) {
       height: 3.5rem;
       width: 3.5rem;
-      margin-bottom: .5rem; } }
+      margin-bottom: .5rem; }
+  .inner aside .more-list {
+    padding: 1.5rem; }
+    .inner aside .more-list h1 {
+      font-size: 3rem; }
+    .inner aside .more-list .more__item:last-child {
+      padding-bottom: 0; } }
 
 @media (max-width: 330px) {
   .homepage .counter p:after {
