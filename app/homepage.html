@@ -21,6 +21,7 @@
 
 <title>Homepage</title>
 <link rel="stylesheet" href="/css/styles.min.css" />
+<script src="/js/modernizr-custom-webp.js"></script>
 <script src="/js/libs.min.js"></script>
 
 <link rel="stylesheet" href="outdatedbrowser/outdatedbrowser.min.css" />
@@ -41,7 +42,12 @@
 	    		<div class="header__inner d-flex align-items-center">
 			    	<div class="col-4 col-xl-8 col-lg-7 col-sm-6 d-flex align-items-center">
 				    	<div class="logo">
-				    		<a href="/"><img src="images/logo.png" alt="SB NAGAMOCHI" /></a>
+				    		<a href="/">
+								<picture>
+									<source srcset="images/logo.webp" alt="" type="image/webp" >
+									<img src="images/logo.png" alt="SB NAGAMOCHI" />
+								</picture>
+							</a>
 				    	</div>
 						<!-- =nav -->
 						<nav id="navbar">
@@ -77,7 +83,9 @@
 				<div class="intro">
 					<h1 class="visually-hidden">Brake & Clutch Parts</h1>
 					<picture>
+						<source srcset="images/pic320.webp" media="(max-width: 460px)" type="image/webp">
 						<source srcset="images/pic320.png" media="(max-width: 460px)">
+						<source srcset="images/pic.webp" alt="" type="image/webp" >
 						<img src="images/pic.png" alt="" />						
 					</picture>
 					<p>The fastest must be <strong>brakes</strong>.</p>

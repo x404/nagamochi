@@ -233,6 +233,7 @@ gulp.task('build', ['clean', 'img', 'scss', 'compress'], function(){
  
 	var buildJs = gulp.src([ // Переносим CSS стили в продакшен
 		config.templateDir + '/js/engine.js',
+		config.templateDir + '/js/modernizr-custom-webp.js',
 		config.templateDir + '/js/libs.min.js',
 		config.templateDir + '/js/slick.min.js',
 		config.templateDir + '/js/selectize.min.js'

@@ -16,11 +16,30 @@
 	}	
 }
 
-.homepage{
-	position: relative;
+.webp{
+	.homepage{
+		.main-pic{
+			background: url(../images/disc.webp) no-repeat;
+		}
+	}
+	.grid{
+		background: #031821 url(../images/bg.webp) no-repeat ;
+	}
+}
+
+.no-webp{
+	.homepage{
+		.main-pic{
+			background: url(../images/disc.png) no-repeat;
+		}
+	}
 	.grid{
 		background: #031821 url(../images/bg.jpg) no-repeat ;
 	}
+}
+
+.homepage{
+	position: relative;
 	.intro{
 		margin-left: calc((100% - 1600px)/2);
 		padding-left: 9.5rem;
@@ -48,6 +67,7 @@
 		}
 		&:after{
 			@extend .before;
+		
 			height: 63px;
 			border-left: 1px solid $color5;
 			left: 443px;
@@ -66,7 +86,6 @@
 	}
 
 	.main-pic{
-		background: url(../images/disc.png) no-repeat;
 		flex-grow: 1;
 		margin-left: -4rem;
 		width: 715px;
