@@ -45,7 +45,12 @@
 	    		<div class="header__inner d-flex align-items-center">
 			    	<div class="col-4 col-xl-8 col-lg-7 col-sm-6 d-flex align-items-center">
 				    	<div class="logo">
-				    		<a href="/"><img src="../images/logo.png" alt="SB NAGAMOCHI" /></a>
+				    		<a href="/" title="">
+								<picture>
+									<source srcset="images/logo.webp" alt="" type="image/webp" >
+									<img src="images/logo.png" alt="SB NAGAMOCHI" />
+								</picture>
+							</a>
 				    	</div>
 						<!-- =nav -->
 						<nav id="navbar">
