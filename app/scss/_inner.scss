@@ -32,7 +32,10 @@
 			font-family: 'proxima_novablack_italic';
 			font-size: 6rem;
 			letter-spacing: .1em;
-		}	
+		}
+		img{
+			max-width: 100%;
+		}
 	}
 }
 
@@ -77,14 +80,8 @@ aside{
 		&:hover{
 			color: $color7;
 			border-color: $color7;
-			// background-color: $color7;
 		}		
 	}
-
-	// .separator{
-	// 	margin-left: 18px;
-	// 	margin-right: 18px;
-	// }
 
 	.current{
 		background-color: $color7 !important;
@@ -96,7 +93,6 @@ aside{
 	.prev,
 	.next{
 		@extend .tdu;
-		// border-bottom: 1px solid;
 		color: $color2;
 		margin-right: 0;
 		position: relative;
