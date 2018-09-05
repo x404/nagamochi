@@ -158,8 +158,6 @@ document.querySelector('.apanel .close-menu').addEventListener("click", function
 document.querySelector('.asubnav .back_btn').addEventListener("click", function(){
 	document.querySelector('.page-asubnav.open').classList.remove('open');
 }, false);
-
-
 // =/mobile menu
 
 
@@ -197,3 +195,5 @@ document.querySelector('.asubnav .back_btn').addEventListener("click", function(
 		};
 	}
 })(window.Element.prototype);
+
+

@@ -470,7 +470,6 @@
 			padding-left: 45px;
 			width: calc(100% - 45px);
 			p{
-				// padding-left: 7%;
 				margin-left: -20px;
 				padding-left: 0;
 				width: 100%;
@@ -514,7 +513,6 @@
 
 	#news-carousel .news-slide{
 		a{
-			// display: block;
 			flex-direction: column;
 			height: auto;
 			align-items: center;
@@ -531,7 +529,6 @@
 		.news__desc{
 			padding-left: 0;
 			text-align: center;
-			// padding-left: 5rem;
 		}
 	}
 
@@ -540,9 +537,6 @@
 		margin-right: 2rem;
 		width: calc(100% - 5.5rem);
 	}
-
-	
-
 }
 
 

@@ -120,6 +120,11 @@
 			right: 20px;
 		}
 	}
+	.header .btn-callback{
+		width: auto;
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 
 @media (max-width: 480px){
@@ -172,17 +177,17 @@
 		}
 	}
 
+	.header .btn-callback{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}	
+
 	.copyright{
 		line-height: 1.5;
 	}
 }
 
 @media (max-width: 320px){
-	.header{
-		.btn-callback{
-			width: 10rem;
-		}
-	}
 	.angle{
 		width: 110px;
 	}
