@@ -1,23 +1,47 @@
 .secondary-nav{
 	background: $color5;
-	padding: 3.5rem 0;
+	padding: 1.5rem 0;
 	letter-spacing: .1em;
 	ul{
 		font-size: 1.8rem;
 		list-style: none;
 		margin-left: -1.8rem;
+		li{
+			margin: 1rem 0;
+			&:not(.active){
+				a,span{
+					&:after{
+						@extend .before;
+						transition: .3s;
+						width: 0;
+						left: 1.4rem;
+						border-bottom: 1px solid #fff;
+						bottom: 0;
+					}
+					position: relative;
+					&:hover{
+						&:after{
+							width: calc(100% - 2.8rem);
+							right: 0;
+						}
+					}					
+				}
+			}
+		}
 		a,
 		span{
-			border-radius: 4rem;
+			display: block;
 			padding: 0.7rem 1.4rem;
 			text-decoration: none;
 			color: $color2;
 			border: 2px solid rgba(255,255,255,0);
+
 		}
 	}
 	.active{
 		a, span{
 			border-color: $color2;
+			border-radius: 4rem;
 			cursor: default;
 		}
 	}

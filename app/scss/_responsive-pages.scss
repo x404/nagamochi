@@ -55,7 +55,18 @@
 			}
 		}
 	}
+
+	// category
+	.category__title{
+		font-size: 2.8rem;
+	}
 }
+
+
+@media (max-width: 1650px){
+
+}
+
 
 @media (max-width: 1550px){
 	.webp{
@@ -709,6 +720,27 @@
 			}
 		}
 	}
+
+	// card
+	.main-card .text{
+		padding-bottom: 5rem;
+		.row{
+			margin-top: 5rem;
+		}
+		.pic{
+			margin-left: auto;
+			margin-right: auto;
+			width: 320px;
+			float: none;
+			display: none;
+		}
+		.description{
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			text-align: justify;
+		}
+	}
+
 }
 
 
@@ -928,6 +960,31 @@
 
 	.main-about .text__inner{
 		margin-bottom: 3rem;
+	}
+
+
+	//card
+	.main-card .text .title{
+		font-size: 3rem;
+		margin-bottom: 2rem;
+	}
+
+
+	.main-about,
+	.main-card{
+		.neck{
+			height: 120px;			
+		}
+	}
+
+	.neck{
+		h1{
+			font-size: 3rem !important;
+		}
+	}
+
+	.main-card main{
+		padding-top: 3rem;
 	}
 }
 

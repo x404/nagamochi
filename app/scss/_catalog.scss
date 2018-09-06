@@ -14,6 +14,7 @@
 	&__column{
 		display: flex;
 		flex-direction: column;	
+		flex-shrink: 0;
 		margin-left: auto;
 		margin-right: auto;
 		width: 285px;
