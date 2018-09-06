@@ -1052,9 +1052,11 @@ form .input-field {
 
 form .submit {
   border-radius: 5rem;
+  display: block;
   font-size: 1.7rem;
   height: 5rem;
   margin-top: 2.5rem;
+  text-align: center;
   width: 16rem; }
 
 form .textarea {
@@ -3476,7 +3478,18 @@ aside {
     flex-grow: 1;
     flex-basis: 100%; }
   .principle__num {
-    font-size: 80px; } }
+    font-size: 80px; }
+  .main-contacts .content {
+    margin-left: 0; }
+    .main-contacts .content main h1 {
+      font-size: 5rem; }
+    .main-contacts .content main h3 {
+      font-size: 2.8rem; }
+    .main-contacts .content main .address {
+      font-size: 1.8rem; }
+  .main-contacts .contacts__cell .tel,
+  .main-contacts .contacts__cell .email {
+    font-size: 2.6rem; } }
 
 @media (max-width: 1199px) {
   .homepage .intro {
@@ -3645,7 +3658,15 @@ aside {
       margin-left: 0;
       margin-right: 0; }
   .coverage__title {
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+  .main-contacts:before, .main-contacts:after {
+    display: none; }
+  .main-contacts .content main h1 {
+    font-size: 5rem; }
+  .main-contacts .content main h3 {
+    font-size: 2.4rem; }
+  .main-contacts .callback__form {
+    margin: 3rem auto 0 0; } }
 
 @media (max-width: 850px) {
   .homepage .intro {
@@ -3878,7 +3899,9 @@ aside {
         border-right: 1px solid #023537;
         height: 104px;
         top: 10px;
-        left: 0; } }
+        left: 0; }
+  .main-contacts .content main h1 {
+    font-size: 4rem; } }
 
 @media (max-width: 500px) {
   .coverage .signature__item {
@@ -3976,7 +3999,18 @@ aside {
   .group__item {
     width: 100%; }
   .group__link {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .main-contacts .callback__form {
+    width: 100%; }
+  .main-contacts .contacts__cell .email,
+  .main-contacts .contacts__cell .tel {
+    font-size: 2.2rem; }
+  .main-contacts .content main h1 {
+    font-size: 3rem; }
+  .main-contacts .content main h3 {
+    font-size: 1.8rem; }
+  .main-contacts .content main .address {
+    font-size: 1.6rem; } }
 
 @media (max-width: 330px) {
   .homepage .counter p:after {
