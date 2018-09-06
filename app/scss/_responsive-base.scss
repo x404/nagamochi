@@ -12,9 +12,7 @@
 
 
 @media (max-width: 1420px){
-	.grid{
-		display: block;
-	}
+
 }
 
 @media (max-width: 1299px){
@@ -98,6 +96,11 @@
 			display: inline-block;
 		}
 	}
+
+	.grid{
+		display: block;
+	}
+		
 }
 
 @media (max-width: 650px){
