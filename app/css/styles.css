@@ -2507,11 +2507,14 @@ aside {
   position: relative; }
 
 .category__column {
+  color: #fff;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
+  pointer-events: none;
   width: 285px; }
 
 .category__link {
@@ -2532,12 +2535,12 @@ aside {
     width: 120%; }
     .category__link:hover .category__inner:after {
       background-color: rgba(3, 21, 27, 0.2); }
-    .category__link:hover .category__title {
+    .category__link:hover + .category__column .category__title {
       color: #00ffef; }
-      .category__link:hover .category__title:after {
+      .category__link:hover + .category__column .category__title:after {
         margin-left: -63px;
         width: 126px; }
-    .category__link:hover .category__num span:after {
+    .category__link:hover + .category__column .category__num span:after {
       right: -40px;
       width: 80px; }
 
@@ -2549,7 +2552,6 @@ aside {
   display: flex;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 6rem;
   width: 100%;
   position: relative; }
   .category__inner:after {
@@ -2562,7 +2564,8 @@ aside {
 
 .category__column {
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  padding-top: 6rem; }
 
 .category__num {
   font-size: 4rem;
@@ -2604,6 +2607,7 @@ aside {
 .category__text {
   font-size: 1.7rem;
   line-height: 1.8;
+  min-height: 12.5rem;
   margin-top: 2.5rem;
   text-align: center; }
 
@@ -3245,10 +3249,6 @@ aside {
   .modal-menu .container {
     padding-right: 5rem; } }
 
-@media (max-width: 1420px) {
-  .grid {
-    display: block; } }
-
 @media (max-width: 1299px) {
   .mainnav li {
     margin-right: 2rem; }
@@ -3291,7 +3291,9 @@ aside {
   .header .btn-callback {
     float: right; }
   footer .lang a {
-    display: inline-block; } }
+    display: inline-block; }
+  .grid {
+    display: block; } }
 
 @media (max-width: 650px) {
   .modal-menu {
@@ -3382,6 +3384,10 @@ aside {
   .category__title {
     font-size: 2.8rem; } }
 
+@media (max-width: 1650px) {
+  .category__inner {
+    background-size: cover; } }
+
 @media (max-width: 1550px) {
   .webp .homepage .main-pic {
     background-image: url(../images/disc1200.webp); }
@@ -3392,7 +3398,11 @@ aside {
     margin-left: -3rem;
     width: 415px; }
   .homepage .intro:before {
-    left: 25px; } }
+    left: 25px; }
+  .category__column {
+    width: 90%; }
+  .category__num {
+    padding-left: 3.5rem; } }
 
 @media (max-width: 1500px) {
   .groups__wrapper {
@@ -3465,7 +3475,14 @@ aside {
       #news-carousel .news-slide .news__desc {
         padding-left: 2rem; }
       #news-carousel .news-slide h3 {
-        margin-top: 0; } }
+        margin-top: 0; }
+  .category__num {
+    font-size: 3rem;
+    padding-left: 1.5rem; }
+  .category__title {
+    font-size: 2.6rem; }
+  .category__text {
+    font-size: 1.5rem; } }
 
 @media (max-width: 1299px) {
   .homepage .intro:before {
@@ -3557,7 +3574,14 @@ aside {
   .homepage .counter:before {
     right: 30px; }
   .homepage .counter:after {
-    margin-left: -125px; } }
+    margin-left: -125px; }
+  .category__num {
+    font-size: 2.5rem;
+    padding-left: 1.5rem; }
+  .category__title {
+    font-size: 2.2rem; }
+  .category__text {
+    font-size: 1.4rem; } }
 
 @media (max-width: 991px) {
   .webp .homepage .main-pic {
@@ -3691,7 +3715,16 @@ aside {
     .homepage .intro:before {
       left: 10%; }
   .news__container {
-    width: 500px; } }
+    width: 500px; }
+  .category__num {
+    font-size: 2.2rem;
+    padding-left: .5rem; }
+  .category__title {
+    font-size: 2rem; }
+  .category__text {
+    font-size: 1.3rem; }
+  .category__desc {
+    padding-bottom: 3rem; } }
 
 @media (max-width: 768px) {
   .homepage .grid {
@@ -3808,7 +3841,26 @@ aside {
   .news__container {
     margin-top: 6rem; }
   .principles {
-    display: none; } }
+    display: none; }
+  .categories .d-flex {
+    display: block; }
+  .category__column {
+    padding: 2.5rem 1.5rem 0;
+    width: 100%; }
+  .category__text {
+    display: none; }
+  .category__num span:after {
+    top: 12px; }
+  .category__desc {
+    display: block;
+    padding-bottom: 0; }
+  .category__title {
+    display: block;
+    margin-top: 1rem;
+    text-align: left;
+    min-height: 6rem; }
+    .category__title:after {
+      display: none; } }
 
 @media (max-width: 700px) {
   .homepage .intro p {
