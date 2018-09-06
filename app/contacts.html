@@ -27,11 +27,6 @@
 <link rel="stylesheet" href="outdatedbrowser/outdatedbrowser.min.css" />
 <script src="/outdatedbrowser/outdatedbrowser.min.js"></script>
 <script src="/outdatedbrowser/detect.js"></script>
-
-<!--[if !IE]><!-->
-<script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
-<!--<![endif]-->
-
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
@@ -47,7 +42,7 @@
 				    	<div class="logo">
 				    		<a href="/" title="">
 								<picture>
-									<source srcset="images/logo.webp" alt="" type="image/webp" >
+									<source srcset="images/logo.webp" type="image/webp" >
 									<img src="images/logo.png" alt="SB NAGAMOCHI" />
 								</picture>
 							</a>
@@ -111,7 +106,8 @@
 						<form action="#" method="post" class="callback__form">
 							<fieldset>
 								<div class="select-wrapper">
-									<select name="reviewobject" class="reviewobject" id="selectreview" placeholder="Country">
+									<select name="reviewobject" class="reviewobject" id="selectreview2">
+										<option value="">Country</option>
 										<option value="Autstralia">Autstralia</option>
 										<option value="Albania">Albania</option>
 										<option value="Angola">Angola</option>
@@ -125,19 +121,19 @@
 									</select>
 								</div>
 								<div class="input-field">
-									<label for="mcallback_name" class="name-field">Your Name</label>
-									<label for="mcallback_name" class="helper-field helper-field-name">Your Name</label>
-									<input type="email" id="mcallback_name" name="name" class="form-control required" value="">
+									<label for="mcallback_name2" class="name-field">Your Name</label>
+									<label for="mcallback_name2" class="helper-field helper-field-name">Your Name</label>
+									<input type="email" id="mcallback_name2" name="name" class="form-control required" value="">
 								</div>
 								<div class="input-field">
-									<label for="mcallback_tel" class="name-field">Your Phone</label>
-									<label for="mcallback_tel" class="helper-field helper-field-name">Your Phone</label>
-									<input type="tel" id="mcallback_tel" name="tel" class="form-control tel required" value="">
+									<label for="mcallback_tel2" class="name-field">Your Phone</label>
+									<label for="mcallback_tel2" class="helper-field helper-field-name">Your Phone</label>
+									<input type="tel" id="mcallback_tel2" name="tel" class="form-control tel required" value="">
 								</div>
 								<div class="input-field textarea-field">
-									<label for="mcallback_msg" class="name-field">Your Enquiry</label>
-									<label for="mcallback_msg" class="helper-field helper-field-msg">Your Enquiry</label>
-									<textarea id="mcallback_msg" name="msg" class="form-control textarea required"></textarea>
+									<label for="mcallback_msg2" class="name-field">Your Enquiry</label>
+									<label for="mcallback_msg2" class="helper-field helper-field-msg">Your Enquiry</label>
+									<textarea id="mcallback_msg2" name="msg" class="form-control textarea required"></textarea>
 								</div>
 
 								<div class="captcha">
