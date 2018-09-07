@@ -801,14 +801,44 @@
 		.pic{
 			margin-left: auto;
 			margin-right: auto;
+			margin-bottom: 3rem;
 			width: 320px;
 			float: none;
-			display: none;
 		}
 		.description{
 			padding-left: 0 !important;
 			padding-right: 0 !important;
 			text-align: justify;
+		}
+
+		.row-pic-right{
+			& > div{
+				&:first-child{
+					order: 1
+				}
+				&:last-child{
+					order: 0
+				}				
+			}
+		}
+
+		.pic-shadow-left{
+			&:before{
+				left: auto;
+				right: -10px;
+			}
+			&:after{
+				left: 10px;
+			}
+		}
+
+		.title{
+			font-size: 3.4rem;
+			text-align: center;
+			&:after{
+				left: 50%;
+				margin-left: -50px;
+			}
 		}
 	}
 
@@ -1389,7 +1419,23 @@
 		.address{
 			font-size: 1.6rem;
 		}
+	}
 
+	.main-card .text{
+		margin-top: -2rem;
+		.pic{
+			width: calc(100% - 20px);
+			max-width: 100%;
+		}
+		.title{
+			font-size: 2.4rem;
+		}
+		.description{
+			line-height: 1.6;
+			p{
+				font-size: 1.4rem;
+			}
+		}
 	}
 }
 

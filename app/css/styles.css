@@ -3786,13 +3786,28 @@ aside {
     .main-card .text .pic {
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 3rem;
       width: 320px;
-      float: none;
-      display: none; }
+      float: none; }
     .main-card .text .description {
       padding-left: 0 !important;
       padding-right: 0 !important;
-      text-align: justify; } }
+      text-align: justify; }
+    .main-card .text .row-pic-right > div:first-child {
+      order: 1; }
+    .main-card .text .row-pic-right > div:last-child {
+      order: 0; }
+    .main-card .text .pic-shadow-left:before {
+      left: auto;
+      right: -10px; }
+    .main-card .text .pic-shadow-left:after {
+      left: 10px; }
+    .main-card .text .title {
+      font-size: 3.4rem;
+      text-align: center; }
+      .main-card .text .title:after {
+        left: 50%;
+        margin-left: -50px; } }
 
 @media (max-width: 750px) {
   .webp .homepage .main-pic {
@@ -4112,7 +4127,18 @@ aside {
   .main-contacts .content main h3 {
     font-size: 1.8rem; }
   .main-contacts .content main .address {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .main-card .text {
+    margin-top: -2rem; }
+    .main-card .text .pic {
+      width: calc(100% - 20px);
+      max-width: 100%; }
+    .main-card .text .title {
+      font-size: 2.4rem; }
+    .main-card .text .description {
+      line-height: 1.6; }
+      .main-card .text .description p {
+        font-size: 1.4rem; } }
 
 @media (max-width: 330px) {
   .homepage .counter p:after {
