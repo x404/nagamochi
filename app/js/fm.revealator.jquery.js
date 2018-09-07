@@ -88,7 +88,9 @@ $(function () {
 				position_class = 'revealator-above';
 			} else {
 				position_class = 'revealator-within';
-			}
+			};
+
+			position_class = 'revealator-within';
 
 			if ($element.hasClass('revealator-load') && !$element.hasClass('revealator-within')) {
 				$element.removeClass('revealator-below revealator-partially-below revealator-within revealator-partially-above revealator-above');

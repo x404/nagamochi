@@ -233,3 +233,17 @@
 		}
 	}
 }
+
+
+@media (min-width: 992px) {
+	.loaded{
+		.main-pic{
+			&.partially-below,
+			&.revealator-within{
+				transform: none;
+				transition-delay: unset !important;
+				transition: none !important
+			}
+		}
+	}
+}

@@ -91,7 +91,7 @@
 					<p>The fastest must be <strong>brakes</strong>.</p>
 					<a href="#" class="btn btn-blue btn-learn-more">Learn more</a>
 				</div>
-				<div class="main-pic revealator-zoomin revealator-delay15 revealator-once"></div>
+				<div class="main-pic revealator-zoomin revealator-delay10 revealator-once"></div>
 				<div class="right revealator-slideleft revealator-delay5 revealator-once" >
 					<div class="counter">
 						<div class="cifr"><span data-number="5643">5643</span></div>
@@ -372,9 +372,15 @@
 <link rel="stylesheet" property="stylesheet" href="/css/fm.revealator.jquery.css" /> 
 <script>
 
+  window.onload = function() {
+	setTimeout(function() {
+		document.querySelector('.overflow').classList.remove('overflow');
+		document.querySelector('body').classList.add('loaded');
+	}, 1500);
+}
+
 
 $(document).ready(function(){
-	setTimeout(function() {document.querySelector('.overflow').classList.remove('overflow')}, 8000);
 
 	$('body').parallax({
 		'elements': [

@@ -1275,11 +1275,11 @@ form .captcha {
   margin-top: 10px;
   margin-bottom: 10px; }
 
-.revealator-once {
-  opacity: 0; }
-
-.overflow {
-  overflow: hidden; }
+@media (min-width: 992px) {
+  .revealator-once {
+    opacity: 0; }
+  .overflow {
+    overflow: hidden; } }
 
 .secondary-nav {
   background: #00b4a9;
@@ -1812,6 +1812,12 @@ aside {
 
 #news-carousel .slick-current:hover a {
   box-shadow: 0 0 20px rgba(0, 255, 239, 0.5); }
+
+@media (min-width: 992px) {
+  .loaded .main-pic.partially-below, .loaded .main-pic.revealator-within {
+    transform: none;
+    transition-delay: unset !important;
+    transition: none !important; } }
 
 /* =mobile-menu
 ---------------------------*/

@@ -798,10 +798,13 @@ form{
 	margin-bottom: 10px;
 }
 
-.revealator-once{
-	opacity: 0;
-}
 
-.overflow{
-	overflow: hidden;
+@media (min-width: 992px) {
+	.revealator-once{
+		opacity: 0;
+	}
+
+	.overflow{
+		overflow: hidden;
+	}
 }
