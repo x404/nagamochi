@@ -1414,6 +1414,9 @@ aside {
 
 /* =news
 ---------------------------*/
+.overflow {
+  overflow: hidden; }
+
 .new__item {
   margin: 5rem 9.2rem 1.7rem 0;
   width: 36.5rem; }
@@ -1435,8 +1438,7 @@ aside {
 .new__thumb {
   transition: .3s box-shadow;
   position: relative;
-  z-index: 1;
-  overflow: hidden; }
+  z-index: 1; }
   .new__thumb:before, .new__thumb:after {
     background-color: rgba(0, 180, 170, 0.2);
     width: 100%;

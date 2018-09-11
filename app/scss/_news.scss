@@ -1,5 +1,9 @@
 /* =news
 ---------------------------*/
+.overflow {
+	overflow: hidden
+}
+
 .new{
 	$w: 36.5rem;
 	&__item{
@@ -34,7 +38,7 @@
 		transition: .3s box-shadow;
 		position: relative;
 		z-index: 1;
-		overflow: hidden;
+		
 		&:before,
 		&:after{
 			@extend .before;
