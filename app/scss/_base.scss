@@ -199,7 +199,8 @@ strong,
 		border-color: $color5;
 		&:hover{
 			color: $color2;
-			background-color: $color5;
+			background-color: $color7;
+			border-color: $color7 !important;
 		}
 	}
 	&-callback{

@@ -851,7 +851,8 @@ strong,
     border-color: #007a8a; }
     .btn-blue:hover {
       color: #fff;
-      background-color: #007a8a; }
+      background-color: #00aec7;
+      border-color: #00aec7 !important; }
   .btn-callback {
     border-radius: 4.5rem;
     height: 4.5rem;
