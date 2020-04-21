@@ -107,7 +107,8 @@
 			&:after{
 				transition: .3s;
 				@extend .before;
-				border-top: 1px solid $color11;
+				// border-top: 1px solid $color11;
+				border-top: 1px solid $color5;
 				top: 20px;
 				right: 0;
 				width: 40px;
@@ -127,7 +128,8 @@
 		text-transform: uppercase;
 		&:after{
 			@extend .before;
-			border-top: 1px solid $color11;
+			// border-top: 1px solid $color11;
+			border-top: 1px solid $color5;
 			bottom: 0;
 			left: 50%;
 			margin-left: -46px;

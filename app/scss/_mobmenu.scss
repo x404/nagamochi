@@ -410,7 +410,8 @@ $color_2: #0563bf;
 
 	&__inner{
 		position: fixed;
-		background-color: rgba(0,180,169,.95);
+		background-color: rgba(0, 130, 141, .95);
+		// background-color: rgba(0,180,169,.95);
 		// background: $color55;
 		top: 0;
 		bottom: 0;
@@ -424,7 +425,7 @@ $color_2: #0563bf;
 		margin-left: .8rem;
 		margin-right: .8rem;
 		&-asubnav{
-			background-color: rgba(0,180,169,.95);
+			background-color: rgba(0, 130, 141, .95);
 			// background: $color55;
 			position: absolute;
 			left: 0;
@@ -475,7 +476,8 @@ $color_2: #0563bf;
 		font-size: 2rem;
 		text-transform: uppercase;
 		li{
-			border-bottom: 1px solid #80dad4;
+			// border-bottom: 1px solid #80dad4;
+			border-bottom: 1px solid $color7;
 			a,
 			span{
 				cursor: pointer;
@@ -511,7 +513,8 @@ $color_2: #0563bf;
 	}
 
 	nav{
-		border-top: 1px solid #80dad4;
+		// border-top: 1px solid #80dad4;
+		border-top: 1px solid $color7;
 		font-size: 1.7rem;
 		font-weight: 500;
 	}

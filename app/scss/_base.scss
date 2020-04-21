@@ -55,7 +55,7 @@ html, body{
 	position: relative;
 	&:before{
 		@extend .before;
-		border-left: 1px solid $color11;
+		border-left: 1px solid $color21;
 	}
 }
 
@@ -607,7 +607,8 @@ form{
 // modal menu
 .modal-menu
 {
-	background: rgba(0, 180, 169, .95);
+	// background: rgba(0, 180, 169, .95);
+	background: rgba(0, 130, 141, .95);
 	height: 100%;
 	left: 0;
 	opacity: 0;
@@ -717,7 +718,7 @@ form{
 			font-size: 3rem;
 		}
 		.email{
-			color: $color7;
+			color: $color20;
 			font-weight: 100;
 			border-bottom: 1px solid ;
 			&:hover{

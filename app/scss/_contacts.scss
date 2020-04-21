@@ -10,6 +10,11 @@
 	stroke-width:2;
 }
 
+
+.webp .main-contacts{
+	background-image:url(../images/contact-bg.webp);
+}
+
 .main-contacts{
 	background: #019187 url(../images/contact-bg.jpg) no-repeat;
 	position: relative;
@@ -31,10 +36,6 @@
 		background: url(../images/triangle.svg) no-repeat;
 		height: 100%;
 		width: 200px;
-		// width: 0;
-		// height: 0;
-		// border-top: calc(100vh - 220px) solid #13242b; 
-		// border-left: 150px solid transparent;
 	}
 
 	.container{
@@ -62,6 +63,10 @@
 				font-size: 2rem;
 				margin-bottom: 3rem;
 			}
+
+			a{
+				color: #00ffef;
+			}
 		}
 	}
 
@@ -84,7 +89,7 @@
 				font-size: 3rem;
 			}
 			.email{
-				color: $color7;
+				color: $color20;
 				font-weight: 100;
 				border-bottom: 1px solid ;
 				&:hover{

@@ -22,10 +22,10 @@
 		&:hover{
 			.new{
 				&__title{
-					color: $color14;
+					color: $color7;
 				}
 				&__thumb{
-					box-shadow: 0 0 15px $color14;
+					box-shadow: 0 0 15px $color7;
 					img{
 						transform: scale(1.1)
 					}
@@ -208,13 +208,10 @@
 				font-size: 1.6rem;
 				margin-bottom: 2rem;
 				& li{
-					// color: #00b4a9;
-					// margin: 2rem 0;
 					position: relative;
 					padding-left: 30px;
 					&:before{
-						// background: $color_1;
-						color: #00b4a9;
+						color: $color5;
 						$s: 3.1rem;
 						// height: $s;
 						// width: $s;
@@ -239,7 +236,7 @@
 							padding-left: 30px;
 							&:before{
 								background: none;
-								color: #00b4a9;
+								color: $color5;
 								content: counter(li) ")";
 								display: block;
 								font-weight: 500;
@@ -290,7 +287,7 @@
 					}
 					th{
 						background: #13242b;
-						border-bottom: 2px solid #00b4a9;
+						border-bottom: 2px solid $color5;
 						color: #fff;
 						font-size: 1.7rem;
 						font-weight: 500;

@@ -25,7 +25,7 @@
 			display: inline-block;
 			&:after{
 				@extend .before;
-				border-top: 1px solid #00b4a9;
+				border-top: 1px solid $color5;
 				right: -217px;
 				top: 15px;
 				width: 128px;
@@ -33,7 +33,7 @@
 			}
 		}
 		.subtitle{
-			$color: $color17;
+			$color: $color5;
 			color: $color;
 			font-family: 'proxima_novabold_italic';
 			font-size: 3rem;
@@ -101,7 +101,8 @@
 		}
 	}
 	&__show{
-		color: $color18;
+		// color: $color18;
+		color: $color5;
 		font-weight: 100;
 		font-size: 5rem;
 		line-height: 1;
@@ -208,7 +209,7 @@
 
 // =coverage
 .coverage{
-	$color1: #00b4a9;
+	$color1: #007a8a;
 	$color2: #e3e3e3;
 	$color3: #0068b4;
 	$color4: #955faa;
