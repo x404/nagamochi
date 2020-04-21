@@ -1,26 +1,3 @@
 ::-ms-clear {
         display: none;
 }
-
-
-// safari
-_::-webkit-:host:not(:root:root), .header{
-}
-
-
-// edge
-@supports (-ms-ime-align:auto) {
-}
-
-
-/*Edge*/
-/*
-@supports ( -ms-accelerator:true ) 
-{
-}
-*/
-
-
-//ie11
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-}

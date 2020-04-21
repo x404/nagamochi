@@ -973,7 +973,6 @@
 
 @media (max-width: 700px){
 	.homepage .intro{
-		// padding-left: 0;
 		p{
 			font-size: 1.6rem;
 			width: 80%;
@@ -1078,10 +1077,9 @@
 		}
 		.signature__item{
 			margin-right: 0;
-			width: 25%;
-			// text-align: center;
 			margin-top: 1rem;
 			justify-content: center;
+			width: 25%;
 		}
 	}
 

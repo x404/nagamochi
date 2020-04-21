@@ -1,7 +1,5 @@
 /*** reset ***********/
 html,body,ul,ol,li,dl,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,a,img,label{margin:0;padding:0;border:0}
-// header, section, footer, aside, nav, article {display:block}
-// ul{list-style:none}
 
 * {
 	-webkit-box-sizing: border-box;
@@ -45,7 +43,6 @@ html, body{
 }
 
 
-// .m-modal-open .grid.inner, 
 .m-modal-open .grid, 
 .m-modal-open .outerwrapper {
     transform: rotateY(5deg);
@@ -103,22 +100,6 @@ body{
 }
 
 
-// .grid.inner{
-// 	display: grid;
-// 	grid-template-areas: "header"
-// 						 "neck"
-// 						 "main"
-// 						 "footer";
-// 	grid-template-rows: auto auto 1fr auto;	
-// 	min-height: 100vh;
-// }
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	//ie11
-}
-
-
-
 .selectize-input input{
 	@include placeholder(#fff);
 	font-weight: 100;
@@ -162,19 +143,6 @@ strong,
 .bold{
 	font-weight: 500;
 }
-em, i, 
-.italic{
-	// font-style: normal;
-	// font-family: "SegoeUIItalic";
-}
-
-strong em,
-em strong
-{
-	// font-weight: normal;
-	// font-family: "SegoeUIBoldItalic";
-}
-
 
 .tdn{
 	text-decoration: none;
@@ -607,7 +575,6 @@ form{
 // modal menu
 .modal-menu
 {
-	// background: rgba(0, 180, 169, .95);
 	background: rgba(0, 130, 141, .95);
 	height: 100%;
 	left: 0;

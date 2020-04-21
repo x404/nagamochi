@@ -3268,12 +3268,6 @@ aside {
 ::-ms-clear {
   display: none; }
 
-/*Edge*/
-/*
-@supports ( -ms-accelerator:true ) 
-{
-}
-*/
 @media (max-width: 1600px) {
   .angle {
     width: 520px; } }
@@ -3980,9 +3974,9 @@ aside {
       font-size: 1.4rem; }
     .coverage .signature__item {
       margin-right: 0;
-      width: 25%;
       margin-top: 1rem;
-      justify-content: center; }
+      justify-content: center;
+      width: 25%; }
   .groups {
     margin-top: 5rem; }
   .advantages {

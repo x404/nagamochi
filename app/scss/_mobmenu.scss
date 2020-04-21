@@ -48,12 +48,6 @@ $color_2: #0563bf;
 			margin: 8px auto;
 			width: 30px;
 		}
-		&:hover{
-			// background-color: saturation(#0563bf, 150%);
-			.icon-bar{
-				// background-color:;
-			}
-		}
 	}
 
 
@@ -193,10 +187,9 @@ $color_2: #0563bf;
 			& > li.folder > span
 			{
 
-				&:after{
-			background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAQAAADxJQ/jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQVLCeT/FpRAAAAvUlEQVQY013RMU4CQRTG8YcHEDShMIG9gJ0YG2vX0HgHb+GlrEQJlaWINlZQuUJLRG7ws9hsmNl5xST/9818873puIvLeIyvyJcF1i5EWmFsjp+8EULhE99po94G3rAxynEY+kDVnDjcV5gfzFP/oXdURjkOhQUq1zkOfSvsj1rpzuM4Ipa5tvSLZ/0c7jDRSy1LW0ydpg8s/WGim8a5scWsVjb41h5PjbLGD3Z40csH+4qpk/Y3XLl31soa/4jt/DWHSlT5AAAAAElFTkSuQmCC") no-repeat left
-					// top: 22px !important;
-				}
+			&:after{
+				background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAUCAQAAADxJQ/jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQQVLCeT/FpRAAAAvUlEQVQY013RMU4CQRTG8YcHEDShMIG9gJ0YG2vX0HgHb+GlrEQJlaWINlZQuUJLRG7ws9hsmNl5xST/9818873puIvLeIyvyJcF1i5EWmFsjp+8EULhE99po94G3rAxynEY+kDVnDjcV5gfzFP/oXdURjkOhQUq1zkOfSvsj1rpzuM4Ipa5tvSLZ/0c7jDRSy1LW0ydpg8s/WGim8a5scWsVjb41h5PjbLGD3Z40csH+4qpk/Y3XLl31soa/4jt/DWHSlT5AAAAAElFTkSuQmCC") no-repeat left
+			}
 
 				&.open{
 					&:after{
@@ -411,8 +404,6 @@ $color_2: #0563bf;
 	&__inner{
 		position: fixed;
 		background-color: rgba(0, 130, 141, .95);
-		// background-color: rgba(0,180,169,.95);
-		// background: $color55;
 		top: 0;
 		bottom: 0;
 		overflow: auto;
@@ -426,7 +417,6 @@ $color_2: #0563bf;
 		margin-right: .8rem;
 		&-asubnav{
 			background-color: rgba(0, 130, 141, .95);
-			// background: $color55;
 			position: absolute;
 			left: 0;
 			top: 0;
@@ -448,7 +438,6 @@ $color_2: #0563bf;
 		height: 100%;
 	}
 	&__top{
-		// background-color: $color8new;
 		align-items: center;
 		height: 8rem;
 		justify-content: space-between;
@@ -476,7 +465,6 @@ $color_2: #0563bf;
 		font-size: 2rem;
 		text-transform: uppercase;
 		li{
-			// border-bottom: 1px solid #80dad4;
 			border-bottom: 1px solid $color7;
 			a,
 			span{
@@ -513,7 +501,6 @@ $color_2: #0563bf;
 	}
 
 	nav{
-		// border-top: 1px solid #80dad4;
 		border-top: 1px solid $color7;
 		font-size: 1.7rem;
 		font-weight: 500;

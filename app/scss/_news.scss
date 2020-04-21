@@ -213,8 +213,6 @@
 					&:before{
 						color: $color5;
 						$s: 3.1rem;
-						// height: $s;
-						// width: $s;
 						border-radius: $s;
 						content: counter(li) ")";; /* В качестве данных используем счетчик */
 						counter-increment:li; /* Увеличиваем значение счетчика на 1 */

@@ -89,7 +89,6 @@
 		left : 0;
 	}
 	&__cell{
-		// border-right: 1px solid #023537;
 		padding: 0 9rem;
 		position: relative;
 		&:after{
@@ -101,7 +100,6 @@
 		}
 	}
 	&__show{
-		// color: $color18;
 		color: $color5;
 		font-weight: 100;
 		font-size: 5rem;
@@ -221,7 +219,6 @@
 	&__signature{
 		font-size: 1.6rem;
 		color: $color2;
-		// margin-top: 5rem;
 		.color1{
 			.circle{
 				background-color: $color1;
