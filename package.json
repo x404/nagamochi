@@ -13,7 +13,7 @@
   "author": "proverstka.com.ua",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.27.10",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.6",
